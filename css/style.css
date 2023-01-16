@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@200;400&display=swap');
+html, body {
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+}
+body {
+    position: relative;
+}
+:root {
+    --main-clr: #45BBEB;
+    --secondary-clr: #0E2048;
+}
+.main-clr {
+    color: var(--main-clr);
+}
+.secondary-clr {
+    color: var(--secondary-clr) !important;
+}
+h1,h2 {
+    font-family: Raleway, 'sans-serif';
+}
+h2 {
+    font-size: 35px;
+}
+#main-header {
+    margin-bottom: 6rem;
+}
+.fullscreen-bg__video {
+    width: 100%;
+    height: 100%;
+}
+.fullscreen-bg {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.video-text {
+    position: absolute;
+    top: 25px;
+    left: 125px;
+    width: 40%;
+}
+.text-content {
+    position:absolute;
+    left: 25%;
+}
+.text-video {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200 !important;
+}
+.nav-items {
+    gap: 20px
+}
+.outer-map {
+    position: relative;
+}
+.map-card {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    z-index: 2;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 0.2s all;
+    opacity: 0;
+}
+.map-cardSm {
+    position: absolute;
+    width: 200px;
+    /* height: 100px; */
+    background-color: #000;
+    z-index: 2;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 0.2s all;
+    opacity: 0;
+}
+.map-card h5 {
+    padding-bottom: 5px;
+}
+.map-cardSm h5 {
+    padding-bottom: 5px;
+}
+.circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #6AFFFF;
+    border-radius: 80%;
+    z-index: 10000;
+    opacity: 0;
+}
+.circle0 {
+    bottom: 11%;
+    left: 33%;
+}
+.circle1 {
+    bottom: 17%;
+    left: 2%;
+}
+.circle2 {
+    bottom: 35%;
+    left: 44%;
+}
+
+.circle4 {
+    bottom: 50%;
+    left: 34%;
+}
+.circle5 {
+    bottom: 50%;
+    left: 58%;
+}
+.circle6 {
+    bottom: 61%;
+    left: 71%;
+}
+/* .circle7 {
+    bottom: 460px;
+    left: 960px;
+} */
+.circle8 {
+    bottom: 70%;
+    left: 65%;
+}
+
+.circle9 {
+    bottom: 72%;
+    left: 57%;
+}
+#karachi {
+    bottom: 24%;
+    left: 27%; 
+}
+#faisalabad {
+    bottom: 65%;
+    left: 52%;
+}
+.mt-lg-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 3rem;
+}
+#gwadar {
+    bottom: 27%;
+    left: 1%; 
+}
+#multan {
+    bottom: 48%;
+    left: 39%;
+}
+#lahore {
+    bottom: 71%;
+    left: 65%;
+}
+#islamabad {
+    bottom: 78%;
+    left: 60%;
+}
+#peshawar {
+    bottom: 80%;
+    left: 51%;
+}
+#quetta {
+    bottom: 60%;
+    left: 30%;
+}
+
+.front-heading {
+    color: var(--main-clr);
+    font-size: 2.5rem;
+}
+.font-thin {
+    font-weight: 100 !important;
+}
+.font-thin2 {
+    font-weight: 200 !important;
+}
+/* .button {
+    background: var(--secondary-clr);
+    color: #fff;
+    border-radius: 4px;
+    width: 236px;
+    height: 42px;
+    margin-top: 0.5rem;
+    transition: 0.7s;
+    border-color: var(--secondary-clr);
+} */
+.button:hover {
+    background: var(--main-clr);
+    border-color: var(--main-clr);
+}
+.main-header-padding {
+    padding: 10rem 6rem;
+}
+#client-vid {
+    opacity: 0.4;
+}
+.testimonial-text {
+    border-bottom: 1px solid black; 
+    padding-bottom: 1rem; 
+    margin-bottom: 1rem
+}
+.search-bar {
+    display: flex;
+    border: 1px solid rgba(69, 187, 235, 0.2);
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+    width: 150px;
+}
+.searchText {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 15px;
+    color: var(--secondary-clr);
+    width: 80%;
+}
+.search-bar:focus {
+    border-width: 3px;
+}
+::placeholder {
+    color: var(--secondary-clr);
+}
+.search-bar button img {
+    width: 16px;
+}
+.searchBtn {
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+}
+/* .col-md-9.col-lg-8.col-sm-5.d-lg-grid.align-items-sm-end {
+    margin-left: 15%;
+} */
+@media screen and (min-width: 769px){
+    #navbar.fixed {
+        position: fixed;
+        background: white;
+        z-index: 10;
+        width: 100%;
+        padding-top: 1rem !important;
+    }
+   
+}
+#clients {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.liner {
+    width: 100%;
+}
+.map-text {
+    font-size: 2.5rem
+}
+.my-lg-3 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+    #main-header {
+        height: 100vh;
+    }
+    #clients {
+        max-height: 65vh !important;
+    }
+    .my-3 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .clients-cards {
+        top: 1% !important;
+    }
+    .opac-0 {
+        text-align: center !important;
+    }
+    .mb-lg-3 {
+        margin-bottom: 16rem !important;
+        margin-top: 0.5rem;
+    }
+    .mt-lg-3 {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+    .py-5 {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+    }
+    .text-content {
+        left: 2%;
+        top: -43%;
+    }
+    .client-list-top, .client-list-bottom {
+        gap: 80px !important;
+    }
+    .client-list-bottom {
+        top: 50% !important;
+        position: static !important;
+    }
+    #navbar {
+        padding-top: 0.25rem !important;
+        position: fixed !important;
+        background-color: #fff;
+        z-index: 10000;
+        width: 100%;
+    }
+    .front-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .margin-x-logo {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .simplifying-heading {
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+    .map-text {
+        font-size: 16px;
+    }
+    .liner {
+        width: 70%;
+    }
+    .small {
+        height: 100px !important;
+    }
+    .video-text {
+        position: absolute;
+        top: 90px;
+        left: 27%;
+        width: 50%;
+    }
+    .card {
+        margin: auto auto 1rem auto;
+    }
+    .main-header-padding {
+        padding: 7rem 5rem 2rem 5rem;
+        
+    }
+    #navbar {
+        margin-top: 0px !important;
+    }
+    #testimonials {
+        padding: 1rem !important;
+    }
+    #footer {
+        padding: 1rem !important;
+    }
+    .text-muted {
+        text-align: left !important;
+    }
+    .col.mb-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    ul.nav.flex-column {
+        align-items: start !important;
+    }
+    .swiper-button-prev {
+        left: 0px !important;
+        transform: translateX(-2px);
+    }
+    .swiper-button-next {
+        right: 0px !important;
+        transform: translateX(2px);
+    }
+    .wh200 {
+        max-width: 180px !important;
+        max-height: 180px !important;
+    }
+    .client-card {
+        min-width: 200px !important;
+        height: 180px !important;
+    }
+    .greyImg {
+        min-width: 200px !important;
+        height: 180px !important;
+    }
+    .invert {
+        min-width: 200px !important;
+        height: 180px !important;
+    }
+    
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .circle0 {
+        bottom: 53px;
+        left: 104px;
+    }
+    .circle1 {
+        left: 3%;
+        bottom: 15%;
+    }
+    .circle2 {
+        bottom: 20%;
+        left: 37%;
+    }
+    .circle4 {
+        bottom: 31%;
+        left: 28%;
+    }
+    .circle6 {
+        bottom: 210px;
+        left: 257px;
+    }
+    .circle5 {
+        bottom: 31%;
+        left: 50%;
+    }
+    .circle8 {
+        bottom: 45%;
+        left: 60%;
+    }
+    .circle9 {
+        bottom: 47%;
+        left: 48%;
+    }
+    #karachi {
+        left: 80px;
+        bottom: 80px;
+    }
+    .map-card {
+        width: 100px;
+        height: 80px;
+        padding: 1rem;
+    }
+    .map-cardSm {
+        width: 100px;
+        height: 70px;
+        padding: 1rem;
+    }
+    .map-card h5{
+        font-size: 15px;
+    }
+    .map-cardSm h5{
+        font-size: 15px;
+    }
+    .map-card p{
+        font-size: 10px;
+    }
+    #gwadar {
+        bottom: 18%;
+    }
+    #multan {
+        bottom: 25%;
+        left: 25%; 
+    }
+    #islamabad {
+        bottom: 50%;
+        left: 50%; 
+    }
+    #peshawar {
+        bottom: 52%;
+        left: 37%; 
+    }
+    #faisalabad {
+        bottom: 37%;
+        left: 42%;
+    }
+    #lahore {
+        bottom: 230px;
+        left: 200px; 
+    }
+    #quetta {
+        bottom: 38%;
+        left: 17%; 
+    }
+    
+}
+.sign-in-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin-top: 6px;
+    border: 1px solid var(--main-clr);
+    background: transparent;
+    transition: 0.4s all;
+    color: var(--secondary-clr);
+}
+.sign-in-btn:hover {
+    background: var(--main-clr);
+    color: white !important;
+}
+.search-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    margin-top: 6px;
+    border: 1px solid var(--main-clr);
+    background: transparent;
+    transition: 0.4s all;
+    color: var(--secondary-clr);
+}
+.search-btn:hover {
+    background: var(--main-clr);
+    color: white !important;
+}
+.icon {
+    height: 16px;
+    width: 16px;
+}
+.nav-link {
+    color: var(--secondary-clr) !important;
+}
+.nav-link:hover {
+    color: var(--main-clr) !important;
+}
+.margin-x-logo {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#navbar{
+    transition: all 0.5s;
+    padding-top: 2rem;
+}
+.simplifying-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--main-clr);
+}
+
+.abs {
+    position: absolute;
+    top: 0px;
+}
+.clients-inner {
+    padding: 4rem 4rem;
+    z-index: 200;
+}
+.clients-inner p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.read {
+    cursor: pointer;
+}
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+.hiddenArrow {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.show {
+    opacity: 1 !important;
+}
+.hideCards {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.4s;
+}
+.showCards{
+    opacity: 1 !important;
+
+}
+#supplychains {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+#supplychains p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 1rem auto;
+}
+#warehousing-card-text {
+    opacity: 0;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.card {
+    width: 100% !important;
+    height: 340px !important;
+    border-radius: 0px !important;
+    /* filter: grayscale(1) !important; */
+}
+.card-body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.card-title {
+    font-family: 'Raleway', sans-serif !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    text-align: center;
+}
+.l1000 {
+    left: 1000px;
+}
+.center {
+    left: 100px;
+}
+.client-card {
+    min-width: 300px;
+    height: 220px;
+    background-color: #131313;
+    filter: grayscale(1);
+    box-shadow: 0 3px 10px rgba(49, 48, 48, 0.5);
+    border-radius: 10px;
+    transition: 0.7s all;
+}
+.greyImg {
+    min-width: 300px;
+    height: 220px;
+    background-color: #131313;
+    box-shadow: 0 3px 10px rgba(49, 48, 48, 0.5);
+    border-radius: 10px;
+    transition: 0.7s all;
+}
+.invert {
+    min-width: 300px;
+    height: 220px;
+    background-color: #131313;
+    box-shadow: 0 3px 10px rgba(49, 48, 48, 0.5);
+    border-radius: 10px;
+    transition: 0.7s all;
+}
+.invert:hover img {
+    filter: invert(1);
+}
+.greyImg:hover {
+    transform: scale(1.1);
+    background-color: var(--secondary-clr);
+}
+.client:hover {
+    background-color: var(--secondary-clr);
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.invert:hover {
+    background-color: var(--secondary-clr);
+    transform: scale(1.1);
+}
+.client:hover .something {
+    filter: grayscale(0);
+}
+
+.client-2:hover {
+    background-color: var(--main-clr);
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.client-list-top, .client-list-bottom {
+    gap: 250px;
+}
+.client-list-bottom {
+    transform: translateX(-100px);
+    position: absolute;
+    top: 80%;
+}
+.clients-cards {
+    position: absolute;
+    top: 35%;
+}
+
+#testimonials {
+    padding: 8rem 4rem;
+    height: 812px;
+    background: linear-gradient(rgba(228, 228, 228, 1), rgba(235, 235, 235, 0));
+}
+#footer {
+    /* background: linear-gradient(102.37deg, #EFEFEF 9.64%, #D1D1D1 110.66%); */
+    /* height: 500px; */
+    /* padding: 8rem 8rem; */
+}
+.footer-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icon {
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+}
+.text-darkblue {
+    color: var(--secondary-clr) !important;
+}
+.f15 {
+    font-size: 15px;
+}
+.test-imgs {
+    width: 221px;
+    height: 221px;
+}
+.swiper-slide p {
+    text-align: center;
+}
+.opac-0 {
+    transition: 0.5s all;
+    opacity: 0;
+    font-size: 15px !important;
+    color: var(--secondary-clr) !important;
+    text-align: left !important;
+}
+.card-title {
+    transition: all 0.4s !important;
+}
+
+@media screen and (min-width: 2460px) {
+    .circle0 {
+        bottom: 220px;
+        left: 860px;
+    }
+    #karachi {
+        left: 780px;
+        bottom: 290px;
+    }
+}
+@media screen and (min-width: 1910px) {
+    .circle0 {
+        bottom: 180px;
+        left: 635px;
+    }
+    /* .circle1 {
+        bottom: 200px;
+        left: 80px;
+    } */
+    .circle2 {
+        bottom: 400px;
+        left: 630px;
+    }
+    .circle3 {
+        bottom: 393px;
+        left: 862px;
+    }
+    .circle5 {
+        bottom: 585px;
+        left: 1135px;
+    }
+    .circle6 {
+        bottom: 670px;
+        left: 1262px;
+    }
+    .circle7 {
+        bottom: 680px;
+        left: 1380px;
+    }
+    .circle8 {
+        bottom: 795px;
+        left: 1250px;
+    }
+    .circle9 {
+        bottom: 810px;
+        left: 1110px;
+    }
+    #karachi {
+        left: 570px;
+        bottom: 290px;
+    }
+}
+ul.nav.flex-column {
+    align-items: start;
+}
+
+.wh200 {
+    max-width: 220px;
+    max-height: 220px;
+}
+.animateHide {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.animateShow {
+    opacity: 1;
+    transform: translateX(0);
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition : none;
+    }
+    .animateHide {
+        transition: none;
+    }
+}
+.small {
+    height: 200px;
+    transition: 1s all;
+    overflow: hidden;
+    z-index: -1;
+    transform: translateY(0);
+}
+
+.swiper-button-next, .swiper-button-prev { 
+    color: var(--main-clr) !important;
+}
+@media screen and (width: 1600px) {
+    .margin-x-logo {
+        margin-left: 10rem;
+        margin-right: 60rem;
+    } 
+}
+@media screen and (width: 1600px) {
+    .margin-x-logo {
+        margin-left: 10rem;
+        margin-right: 16rem;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1598px){
+    .margin-x-logo {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+.br-50 {
+    border-radius: 50%;
+}
+.logo {
+    width: 150px;
+    height: 40px;
+}
+@media screen and (min-width: 400px) and (max-width: 420px){
+    .circleSm {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: #6AFFFF;
+        border-radius: 80%;
+        z-index: 10000;
+        opacity: 0;
+    }
+    .circle6 {
+        bottom: 223px;
+        left: 273px;
+    }
+    #islamabad {
+        bottom: 52%;
+        left: 52%; 
+    }
+    #lahore {
+        bottom: 230px;
+        left: 210px; 
+    }
+}
+@media screen and (max-width: 360px) {
+    .circle6 {
+        bottom: 198px;
+        left: 240px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .circle0 {
+        bottom: 66px;
+        left: 259px;
+    }
+    #karachi {
+        bottom: 115px;
+        left: 235px;
+    }
+    .circle2 {
+        bottom: 165px;
+        left: 246px;
+    }
+    #multan {
+        bottom: 205px;
+        left: 212px;
+    }
+    .circle5 {
+        bottom: 264px;
+        left: 509px;
+    }
+    #lahore {
+        bottom: 293px;
+        left: 474px;
+    }
+    .circle6 {
+        bottom: 278px;
+        left: 551px;
+    }
+    #islamabad {
+        bottom: 308px;
+        left: 520px;
+    }
+}
+
+/* @media screen and (min-width: 1430px) and (max-width: 1500px) {
+    .circle5 {
+        bottom: 420px;
+        left: 860px;
+    }
+    .circle2 {
+        bottom: 285px;
+        left: 440px;
+    }
+} */
+.mb-lg-3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+@media screen and (min-width: 800px) and (max-width: 850px) {
+    .video-text {
+        left: 8%;
+    }
+    .map-text {
+        font-size: 1.5rem;
+    }
+    .text-content {
+        left: 4% !important;
+        top: -50% !important;
+    }
+    .mb-lg-3 {
+        margin-bottom: 12rem !important;
+    }
+    .text-content {
+        left: 2%;
+        top: -35%;
+    }
+    .clients-cards {
+        top: 1% !important;
+    }
+    .front-heading {
+        font-size: 1.7rem;
+    }
+    #clients {
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 380px) {
+    #clients {
+        min-height: 65vh;
+    }
+
+}
+
+@media screen and (width: 768px) {
+    .front-heading {
+        font-size: 23px;
+    }
+    .map-text {
+        font-size: 23px;
+    }
+    .video-text {
+        left: 12%;
+    }
+    .text-content {
+        left: 0;
+    }
+    #clients {
+        height: 80vh;
+    }
+    .simplifying-heading {
+        font-size: 60px;
+    }
+    #testimonials {
+        padding: 8rem 2rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1025) {
+    .ml-lg-2 {
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width: 1025px){
+    .ml-lg-2 {
+        margin-left: 4rem !important;
+    }
+}
+
+@media screen and (min-width: 1344px) and (max-width: 1370px) {
+    .mt-lg-3 {
+        margin-top: 10rem !important;
+    }
+}
+.button {
+    width: 135px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.get-started {
+    background-color: #0E2048;
+    color: #fff;
+}
+.login {
+    background-color: #fff;
+    border-color: #46BBEB;
+    color: #0E2048;
+}
+.callIcon {
+    border: none;
+    background: transparent;
+    margin-right: 16px;
+}
+#phoneNumber {
+    display: none;
+    transition: display 0.5s;
+    text-decoration: none;
+    color: #0E2048;
+    font-weight: 400;
+}
+.bg-dark {
+    background-color: #1E1E1E !important;
+}
+
+.footer-bg {
+    background: linear-gradient(#0E2048, #000C27);
+}

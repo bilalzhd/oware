@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Oware</title>
+</head>
+
+<body>
+
+    <div id="main-header">
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between flex-row" style="width: 100%">
+                        <!-- <div class="col-md-1 col-sm-0 col-lg-1"></div> -->
+                        <div class="d-flex">
+                            <a class="navbar-brand ml-lg-2" href="#"><img class="logo" src="assets/logodark.png"
+                                    alt="Oware"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active mx-3" aria-current="page" href="#">COMPANY</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mx-3" href="#">SERVICES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mx-3" href="#">CULTURE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mx-3" href="#">NEWSROOM</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button id="phoneCall" class="callIcon">
+                                <img src="./assets/call.png" alt="Call Icon" />
+                                <a id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
+                            </button>
+                            <button class="button login">LOGIN</button>
+                            <button class="mx-3 button get-started" type="submit">GET STARTED</button>
+                        </div>
+                    </div>
+            </nav>
+        </section>
+
+        <section id="main-header">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 main-header-padding">
+                    <h2 class="front-heading animateHide" id="frontHeading"><span class="font-thin">BUILDING
+                            PAKISTAN'S</span> DIGITAL SUPPLY CHAIN
+                        <span class="font-thin">INFRASTRUCTURE</span>
+                    </h2>
+                    <button class="button">GET STARTED</button>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <video loop muted autoplay class="fullscreen-bg__video">
+                        <source src="assets/OWare_LPanim_Alpha_Q60.webm" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="new-section" class="bg-transparent">
+        <div class="container d-flex flex-column align-items-center p-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="main-clr">Gain access to the world of on-demand warehousing & fulfillment at your
+                        fingertips through O-Nexus.</h2>
+                    <p class="secondary-clr">O-Nexus gives you the ability to reserve your own space at any time and
+                        from any location; driven by a dynamic warehousing solution and logistics support, providing
+                        maximum visibility and control.</p>
+                    <div class="buttons">
+                        <button class="button get-started">SIGN UP</button>
+                        <button class="button">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <div class="outer-map">
+            <div class="circle0 circle" data-city="karachi"></div>
+            <div class="circle1 circle" data-city="gwadar"></div>
+            <div class="circle2 circle" data-city="multan"></div>
+            <div class="circle3 circle" data-city="sialkot"></div>
+            <div class="circle4 circle" data-city="quetta"></div>
+            <div class="circle5 circle circleSm" data-city="faisalabad"></div>
+            <div class="circle6 circle circleSm" data-city="lahore"></div>
+            <div class="circle7 circle" data-city="rawalpindi"></div>
+            <div class="circle8 circle" data-city="islamabad"></div>
+            <div class="circle9 circle" data-city="peshawar"></div>
+            <div class="fullscreen-bg">
+                <div class="video-text">
+                    <h2 class="text-white map-text hidden"><span class="font-thin2">O-NEXUS CONNECTS TO YOUR
+                            NETWORK</span>
+                        WHENEVER, WHEREVER, HOWEVER</h2>
+                </div>
+                <video loop muted autoplay id="vid" class="fullscreen-bg__video">
+                    <source type="video/mp4" src="./assets/map-without-border.mp4">
+                </video>
+                <div class="map-card" id="karachi">
+                    <h5 class="border-bottom text-light">Karachi</h5>
+                    <p class="text-white">3,780 km<sup>2</sup> </p>
+                </div>
+                <div class="map-card" id="gwadar">
+                    <h5 class="border-bottom text-light">Gwadar</h5>
+                    <p class="text-white">15,210 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="multan">
+                    <h5 class="border-bottom text-light">Multan</h5>
+                    <p class="text-white">3,721 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="quetta">
+                    <h5 class="border-bottom text-light">Quetta</h5>
+                    <p class="text-white">3,501 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="lahore">
+                    <h5 class="border-bottom text-light">Lahore</h5>
+                    <p class="text-white">1,772 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="faisalabad">
+                    <h5 class="border-bottom text-light">Faisalabad</h5>
+                    <p class="text-white">1,330 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="islamabad">
+                    <h5 class="border-bottom text-light">Islamabad</h5>
+                    <p class="text-white">906.5 km<sup>2</sup></p>
+                </div>
+                <div class="map-card" id="rawalpindi">
+                    <h5 class="border-bottom text-light">Rawalpindi</h5>
+                    <p class="text-white">Lorem ipsum dolor sit </p>
+                </div>
+                <div class="map-card" id="sialkot">
+                    <h5 class="border-bottom text-light">Sialkot</h5>
+                    <p class="text-white">Lorem ipsum dolor sit </p>
+                </div>
+                <div class="map-card" id="peshawar">
+                    <h5 class="border-bottom text-light">Peshawar</h5>
+                    <p class="text-white">215 km<sup>2</sup></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="supplychains">
+        <div class="container">
+            <h2 class="mx-auto text-center simplifying-heading hidden" id="supplychainsHeading"><span
+                    class="font-thin2">SIMPLIFYING</span> SUPPLY
+                CHAINS</h2>
+            <p class="mx-auto w-75 secondary-clr">We offer scalable and tech-driven warehousing and distribution for B2B
+                and retail
+                through a connected network of fulfillment centers and third-party logistics providers</p>
+            <div class="cards">
+                <div class="row">
+                    <!-- linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%),  -->
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="warehousing-card" data-id="warehousing"
+                            style="background: url('assets/warehousingdark.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="warehousing-title">Access to an Exclusive Footprint of
+                                    Warehouses</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="warehousing">Our vast network of connected first-and third-party
+                            fulfillment centers enables faster time to market, so you can ensure your products are
+                            exactly where they need to be.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="logistics-card"
+                            style="background: linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%), url('assets/logistics.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="logistics-title">Software driven consolidated
+                                    operations</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="logistics">Achieve scalable, on-time pickups and deliveries at the
+                            right
+                            cost. From existing store replenishment to B2B fulfilment, our logistics network
+                            enable
+                            omnichannel distribution to support your delivery requirements.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="platform-card"
+                            style="background: linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%), url('assets/platform.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="platform-title">Data driven
+                                    distribution</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="platform">Manage, track, view and analyze every aspect of your
+                            operations
+                            in one place with our cutting-edge cloud supply chain platform. Optimize your network
+                            through real time visibility, intuitive auditable dashboard and digitized workflow for
+                            all
+                            supply chain activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="d-flex align-items-center justify-content-center mb-lg-3">
+            <img class="small hiddenArrow arrow" src="assets/arrow.png" alt="">
+        </div>
+    </section>
+
+    <section id="clients" class="my-4">
+        <div class="abs">
+            <video loop muted autoplay poster="assets/client-back.png" id="client-vid" class="fullscreen-bg__video">
+            </video>
+        </div>
+        <!-- <div class="clients-inner">
+            <div class="text-content">
+                <h2 class="text-center simplifying-heading hidden" id="simplifyingHeading"><span
+                        class="font-thin2">OUR</span> HAPPY
+                    CUSTOMERS</h2>
+                <p class="secondary-clr text-center" id="simplifyingText">Book your own warehouse space by connecting
+                    with our
+                    network.</p>
+            </div>
+            <div class="clients-cards">
+                <div class="row">
+                    <div class="client-list-top d-flex flex-row">
+                        <div id="bazar" class="greyImg m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/bazargrey.png" alt="">
+                        </div>
+                        <div class="client-card client m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Descon.png" alt="">
+                        </div>
+                        <div id="iffco" class="client-card client m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Iffco-Grey.png" alt="">
+                        </div>
+                        <div id="kravemart" class="greyImg m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Kravemart-grey.png" alt="">
+                        </div>
+                        <div class="client-card client m-2 d-flex align-items-center justify-content-center">
+                            <img class=" wh200" src="assets/pitchlogos/Medz.png" alt="">
+                        </div>
+                        <div id="bazar2" class="greyImg m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/bazargrey.png" alt="">
+                        </div>
+                        <div class="client-card client m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Descon.png" alt="">
+                        </div>
+                        <div id="iffco2"
+                            class="client-card client m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Iffco.png" alt="">
+                        </div>
+                    </div>
+                    <div class="client-list-bottom d-flex flex-row">
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Pandamart.png" alt="">
+                        </div>
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Retailo.png" alt="">
+                        </div>
+                        <div id="rholab"
+                            class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/rahlab-grey.png" alt="">
+                        </div>
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Shan.png" alt="">
+                        </div>
+
+                        <div id="unilever"
+                            class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Unilever-grey.png" alt="">
+                        </div>
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Pandamart.png" alt="">
+                        </div>
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/Retailo.png" alt="">
+                        </div>
+                        <div class="client-card client-2 m-2 d-flex align-items-center justify-content-center">
+                            <img class="wh200" src="assets/pitchlogos/rholab.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+
+    <section>
+        <div class="d-flex align-items-center justify-content-center mt-lg-3">
+            <img class="small hiddenArrow arrow" src="assets/arrow.png" alt="">
+        </div>
+    </section>
+
+    <!-- <section id="testimonials">
+        <h2 class="mx-auto text-center simplifying-heading hidden" id="seeingIsBelieving"><span
+                class="font-thin2">SEEING IS </span>BELIEVING</h2>
+        Swiper --
+        <div class="swiper testimonial">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/ammarshakeel.jfif" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Ammar Shakeel</h3>
+                                    <h6 class="text-center secondary-clr">Deputy Director Supply Chain Lotte Akhtar</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">We have started using supply chain services
+                                    from Oware in 2021. Really impressed to see the dedication, professionalism and
+                                    agility of team. Looking forward to an extended long term business partnership in
+                                    coming times.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/hashimkhan.jfif" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Hashim Khan</h3>
+                                    <h6 class="text-center secondary-clr">Operations Bazaar Technologies</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Our experience with Oware has been great and
+                                    one of mutual learning. Our search for a 3PL to absorb our variation in demand
+                                    wasn't easy. Being B2B, our fulfilment and tracking looked very different from
+                                    traditional B2C E commerce players. We tried working with multiple partners but in
+                                    Oware we found agility, reliability and a business partner mentality.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/jarrarshah.png" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Jarrar Shah</h3>
+                                    <h6 class="text-center secondary-clr">Founder & CEO 24/7 Technologies</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Oware has been a breath of fresh air for
+                                    us,
+                                    helping us scale faster in a capital efficient manner taking away the hassle of
+                                    warehousing and fulfilment and letting us focus on scaling our brand and
+                                    network.
+                                    Their team is extremely professional and our relationship is one of a true
+                                    partnership rather than a transaction.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/ali.png" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Mohammad Ali</h3>
+                                    <h6 class="text-center secondary-clr">Assistant Manager Procurement Pandamart</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Their attention to resolving queries is
+                                    commendable & are driven to provide one of the finest logistics services to Us.
+                                    Great Offerings & Great Flexibility.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section> -->
+
+    <section id="footer" class="footer-bg">
+        <div class="container" style="border-bottom: 1px solid #0E2048; padding-bottom: 1rem">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
+                <div class="col col-md-4 mb-3 footer-col align-items-start">
+                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <img src="assets/logodark.png" alt="" style="width: 100px; height: 27px">
+                    </a>
+                    <p class="text-white liner f15">Building world - class supply chain infrastructure for
+                        Pakistan and
+                        beyond</p>
+                    <p class="text-white">Connect With Us</p>
+                    <div class="socials">
+                        <a href=""><img src="assets/facebook.png" alt=""></a>
+                        <a href=""><img class="social-icon" src="assets/instagram.svg" alt=""></a>
+                        <a href=""><img class="social-icon" src="assets/twitter.png" alt=""></a>
+                        <a href=""><img class="social-icon" src="assets/linkedin.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col col-md-1 mb-3">
+                </div>
+
+                <div class="col col-md-2 mb-3">
+                    <div class="align-items-start">
+                        <h5>Services</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white"> Warehousing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white"> Logistics</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white">Platform</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-md-2 mb-3">
+                    <div class="align-items-start">
+                        <h5 class="secondary-clr">Short Links</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white">Contact Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white">Privacy &amp; Policy
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="p-0 text-white">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-md-3 mb-3">
+                    <div class="align-items-start">
+                        <h5 class="text-white">Reach Us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="callto:+923220936174" class="nav-link p-0 text-muted">+92
+                                    322
+                                    0936174</a></li>
+                            <li class="nav-item mb-2"><a href="mailto:commercial@oware.com"
+                                    class="nav-link p-0 text-muted">commercial@oware.co</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <p class="pt-4 pb-3 text-center mb-0">Copyright &#169; 2022 OWARE</p>
+    </section>
+
+
+</body>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/oware.js"></script>
+
+</html>
