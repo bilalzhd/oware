@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@200;400;700&display=swap');
 html, body {
     overflow-x: hidden;
     box-sizing: border-box !important;
@@ -16,7 +16,7 @@ body {
 .secondary-clr {
     color: var(--secondary-clr) !important;
 }
-h1,h2 {
+h1,h2, p {
     font-family: Raleway, 'sans-serif';
 }
 h2 {
@@ -24,6 +24,9 @@ h2 {
 }
 #main-header {
     margin-bottom: 6rem;
+}
+.fw-700 {
+    font-weight: bold;
 }
 .fullscreen-bg__video {
     width: 100%;
