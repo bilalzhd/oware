@@ -34,9 +34,9 @@ var swiper = new Swiper(".testimonial", {
   breakpoints: { 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
 });
 
-window.addEventListener("scroll", function () {
-  document.querySelector("#navbar").classList.toggle("fixed", window.scrollY > 60)
-});
+// window.addEventListener("scroll", function () {
+//   document.querySelector("#navbar").classList.toggle("fixed", window.scrollY > 60)
+// });
 
 const observer = new IntersectionObserver(e => {
   e.forEach(e => { e.isIntersecting ? e.target.classList.add("show") : e.target.classList.remove("show") })
@@ -205,3 +205,4 @@ toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.p
 toggleImageOnCard(iffco, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
 toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
 toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
+

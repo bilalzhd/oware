@@ -21,7 +21,7 @@
                     <div class="d-flex justify-content-between flex-row" style="width: 100%">
                         <!-- <div class="col-md-1 col-sm-0 col-lg-1"></div> -->
                         <div class="d-flex">
-                            <a class="navbar-brand ml-lg-2" href="#"><img class="logo" src="assets/logodark.png"
+                            <a class="navbar-brand ml-lg-2" href="/"><img class="logo" src="assets/logodark.png"
                                     alt="Oware"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -46,43 +46,110 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <button id="phoneCall" class="callIcon">
+                            <button id="phoneCall" class="callIcon d-flex align-items-center justify-content-center">
                                 <img src="./assets/call.png" alt="Call Icon" />
-                                <a id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
+                                <a class="mx-2" id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
                             </button>
                             <button class="button login">LOGIN</button>
-                            <button class="mx-3 button get-started" type="submit">GET STARTED</button>
+                            <button class="mx-3 button get-started" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" type="submit">GET STARTED</button>
                         </div>
                     </div>
             </nav>
         </section>
-
-        <section id="main-header">
-            <div class="container">
-            <div class="w-50">
-                <p class="fw-700 secondary-clr" style="font-size: 19px;">DISRUPTING B2B SUPPLY CHAINS THROUGH OUR INTEGRATED DIGITAL INFRASTRUCTURE </p>
-                <p class="secondary-clr" style="font-size: 16px;">Our mission is to help businesses access, scale and optimize.
-                </p>
-                <div class="d-flex flex-row align-items-center" style="gap: 4px">
-                    <img src="./assets/play.png" alt="PLAY">
-                    <p class="secondary-clr m-0">What is <span class="fw-700">OWARE</span>?</p>
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 secondary-clr" id="exampleModalLabel">Get Started</h1>
+                        <p class="secondary-clr">Fill out the form below to get access to on-demand warehousing and
+                            visual data tracking with Oware’s network.</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name*"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email Address"
+                                    aria-label="Email Address">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Contact #*"
+                                    aria-label="Contact #*">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Company Name"
+                                    aria-label="Company Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Designation"
+                                    aria-label="Designation">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <textarea type="text" class="form-control" placeholder="Do you have a message for us?"
+                                    aria-label="Do you have a message for us?" cols="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="form-check-label" for="flexCheckDefault">
+                                Would you like to sign up for O-nexus now?
+                            </p>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button get-started">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-            <div class="d-flex flex-column align-items-center">
-                    <img src="./assets/neon-net.png" width="500">
+
+        <section id="main-header" style="margin-top: 2rem;">
+            <div class="container">
+                <div class="w-50">
+                    <p class="fw-700 secondary-clr" style="font-size: 19px;">DISRUPTING B2B SUPPLY CHAINS THROUGH OUR
+                        INTEGRATED DIGITAL INFRASTRUCTURE </p>
+                    <p class="secondary-clr" style="font-size: 16px;">Our mission is to help businesses access, scale
+                        and optimize.
+                    </p>
+                    <div class="d-flex flex-row align-items-center" style="gap: 4px">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=nQQJpmiV4kU"><img
+                                src="./assets/play.png" alt="PLAY"></a>
+                        <p class="secondary-clr m-0">What is <span class="fw-700">OWARE</span>?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center container-fluid" style="padding: 0; position: relative;">
+                <img src="./assets/neon-net.png" width="55%">
+                <div class="video-container">
                     <video loop muted autoplay class="fullscreen-bg__video">
                         <source src="assets/truck-animation-new.webm" type="video/mp4">
                     </video>
                 </div>
+                <img class="greywaves" src="./assets/grey-waves.png" height="527px" alt="">
             </div>
-        </section>
+    </div>
+    </section>
     </div>
 
-    <section id="new-section" class="bg-transparent">
+    <section id="mockup"
+        style="width: 100%; background: url('./assets/neon-net2.png') no-repeat center; background-size: cover;">
         <div class="container d-flex flex-column align-items-center p-4">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex flex-column" style="padding-left: 30px; padding-right: 30px; gap: 40px;">
                     <h2 class="main-clr">Gain access to the world of on-demand warehousing & fulfillment at your
                         fingertips through O-Nexus.</h2>
                     <p class="secondary-clr">O-Nexus gives you the ability to reserve your own space at any time and
@@ -93,12 +160,15 @@
                         <button class="button">LEARN MORE</button>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6" style="position: relative;">
+                    <img width="80%" class="mockup2 mx-auto" src="./assets/mockup.png" alt="Desktop">
+                    <img width="30%" class="mockup1 mx-auto" src="./assets/mobile-mockup.png" alt="Mobile">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="map">
+    <!-- <section id="map">
         <div class="outer-map">
             <div class="circle0 circle" data-city="karachi"></div>
             <div class="circle1 circle" data-city="gwadar"></div>
@@ -161,9 +231,22 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="map">
+        <div class="container d-flex flex-row-reverse" style="position: relative;">
+            <img src="./assets/map-final-new.png" alt="">
+            <h2 style="position: absolute; width: 35%; left: 1%; top: 7%; font-weight: 700;" class="main-clr">CONNECT,
+                MANAGE, &amp; OPTIMIZE <span style="font-weight: 400;">Your Network</span> </h2>
+        </div>
+        <div class="d-flex">
+            <img class="w-50" style="object-fit: cover;" src="./assets/geometricdown.png" alt="">
+            <img class="w-50" style="object-fit: cover;" src="./assets/geometric-down-flipped.png" alt="">
+        </div>
     </section>
 
-    <section id="supplychains">
+
+    <!-- <section id="supplychains">
         <div class="container">
             <h2 class="mx-auto text-center simplifying-heading hidden" id="supplychainsHeading"><span
                     class="font-thin2">SIMPLIFYING</span> SUPPLY
@@ -173,7 +256,6 @@
                 through a connected network of fulfillment centers and third-party logistics providers</p>
             <div class="cards">
                 <div class="row">
-                    <!-- linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%),  -->
                     <div class="col-md-6">
                         <div class="card hideCards" id="warehousing-card" data-id="warehousing"
                             style="background: url('assets/warehousingdark.png'); background-size: cover;">
@@ -228,13 +310,19 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section id="supplychains">
+        <div class="container">
+            <h2><span>SIMPLIFYING</span> SUPPLY CHAINS</h2>
+            <p>We offer scalable and tech-driven warehousing and distribution for B2B and retail through a connected
+                network of fulfillment centers and third-party logistics providers</p>
+        </div>
     </section>
-
 
 
     <section>
         <div class="d-flex align-items-center justify-content-center mb-lg-3">
-            <img class="small hiddenArrow arrow" src="assets/arrow.png" alt="">
+            <img class="small hiddenAr   arrow" src="assets/arrow.png" alt="">
         </div>
     </section>
 
@@ -485,6 +573,16 @@
 
 </body>
 <script src="vendor/bootstrap.bundle.min.js"></script>
+<script>
+    let callBtn = document.getElementById('phoneCall')
+    let phoneLink = document.getElementById('phoneNumber');
+    callBtn.addEventListener('click', () => {
+        phoneLink.style.display = "inline-block"
+    });
+    callBtn.addEventListener('blur', () => {
+        phoneLink.style.display = "none";
+    })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="js/oware.js"></script>
 
