@@ -12,6 +12,9 @@ body {
     --main-clr: #45BBEB;
     --secondary-clr: #0E2048;
 }
+a {
+    text-decoration: none
+}
 .main-clr {
     color: var(--main-clr);
 }
@@ -536,7 +539,7 @@ h2 {
     width: 16px;
 }
 .nav-link {
-    color: var(--secondary-clr) !important;
+    color: #fff !important;
 }
 .nav-link:hover {
     color: var(--main-clr) !important;
@@ -780,6 +783,7 @@ input[type="checkbox"]:focus {
     width: 26px;
     height: 26px;
     margin-left: 10px;
+    color: #fff;
 }
 .text-darkblue {
     color: var(--secondary-clr) !important;
