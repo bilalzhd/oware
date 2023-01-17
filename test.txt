@@ -475,3 +475,73 @@
 <script src="js/index.js"></script>
 
 </html>
+
+
+
+
+
+<!-- <section id="supplychains">
+        <div class="container">
+            <h2 class="mx-auto text-center simplifying-heading hidden" id="supplychainsHeading"><span
+                    class="font-thin2">SIMPLIFYING</span> SUPPLY
+                CHAINS</h2>
+            <p class="mx-auto w-75 secondary-clr">We offer scalable and tech-driven warehousing and distribution for B2B
+                and retail
+                through a connected network of fulfillment centers and third-party logistics providers</p>
+            <div class="cards">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="warehousing-card" data-id="warehousing"
+                            style="background: url('assets/warehousingdark.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="warehousing-title">Access to an Exclusive Footprint of
+                                    Warehouses</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="warehousing">Our vast network of connected first-and third-party
+                            fulfillment centers enables faster time to market, so you can ensure your products are
+                            exactly where they need to be.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="logistics-card"
+                            style="background: linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%), url('assets/logistics.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="logistics-title">Software driven consolidated
+                                    operations</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="logistics">Achieve scalable, on-time pickups and deliveries at the
+                            right
+                            cost. From existing store replenishment to B2B fulfilment, our logistics network
+                            enable
+                            omnichannel distribution to support your delivery requirements.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hideCards" id="platform-card"
+                            style="background: linear-gradient( rgba(11, 25, 64, 0.6) 100%, rgba(11, 25, 64, 0.6)100%), url('assets/platform.png'); background-size: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="platform-title">Data driven
+                                    distribution</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="opac-0" id="platform">Manage, track, view and analyze every aspect of your
+                            operations
+                            in one place with our cutting-edge cloud supply chain platform. Optimize your network
+                            through real time visibility, intuitive auditable dashboard and digitized workflow for
+                            all
+                            supply chain activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
