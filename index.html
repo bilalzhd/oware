@@ -32,16 +32,16 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active mx-3" aria-current="page" href="#">COMPANY</a>
+                                        <a class="nav-link secondary-clr active mx-3" aria-current="page" href="#">COMPANY</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link mx-3" href="#">SERVICES</a>
+                                        <a class="nav-link secondary-clr mx-3" href="#">SERVICES</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link mx-3" href="#">CULTURE</a>
+                                        <a class="nav-link secondary-clr mx-3" href="#">CULTURE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link mx-3" href="#">NEWSROOM</a>
+                                        <a class="nav-link secondary-clr mx-3" href="#">NEWSROOM</a>
                                     </li>
                                 </ul>
                             </div>
@@ -121,7 +121,7 @@
         <section id="main-header" style="margin-top: 2rem; position: relative;">
             <div class="container">
                 <p class="logoAnimated">OWARE</p>
-                <div class="w-50">
+                <div id="header-text" class="w-50">
                     <p class="fw-700 secondary-clr" style="font-size: 19px;">DISRUPTING B2B SUPPLY CHAINS THROUGH OUR
                         INTEGRATED DIGITAL INFRASTRUCTURE </p>
                     <p class="secondary-clr" style="font-size: 16px;">Our mission is to help businesses access, scale
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="d-flex flex-column align-items-center container-fluid" style="padding: 0; position: relative;">
-                <img src="./assets/neon-net.png" width="55%">
+                <img src="./assets/neon-net.png" id="neonNet">
                 <div class="video-container">
                     <video loop muted autoplay class="fullscreen-bg__video">
                         <source src="assets/truck-animation-new.webm" type="video/mp4">
@@ -547,19 +547,37 @@
 let initAdd = 'assets/pitchlogos/';
 let unilever = document.querySelector('#unilever');
 toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
-let animatedLogoText = document.querySelector('.logoAnimated');
-let initialOpacity = animatedLogoText.style.opacity;
 
-window.addEventListener('scroll', () => {
-    var scroll = window.scrollY;
-  
-  if (animatedLogoText.style.opacity) {
-    animatedLogoText.style.opacity = initialOpacity - scroll/1000;
-    window.scrollTo(0, 0);
-  } else {
-    window.onscroll = null;
+let animatedLogoText = document.querySelector('.logoAnimated');
+let headerText = document.querySelector('#header-text');
+let video = document.querySelector('.video-container');
+let neonNet = document.querySelector('#neonNet');
+let logo = document.querySelector('.logo');
+// let initialOpacity = animatedLogoText.style.opacity;
+let scrollPos = window.pageYOffset;
+let prevScrollPos = 0;
+let isTextInvisible = false;
+
+// Add a scroll event listener
+window.addEventListener('scroll', function(event) {
+  prevScrollPos = scrollPos;
+  scrollPos = window.pageYOffset;
+
+  // Check if the user is scrolling down and the text has not yet become invisible
+  if (scrollPos > prevScrollPos && !isTextInvisible) {
+    animatedLogoText.style.opacity = 0;
+    // animatedLogoText.style.width = 0;
+    // animatedLogoText.style.height = 0;
+    logo.style.opacity = 1;
+    headerText.style.opacity = 1;
+    video.style.width = '60%';
+    video.style.opacity = 1;
+    neonNet.style.width = '55%';
+    neonNet.style.opacity = 1;
+    isTextInvisible = true;
+    window.scrollTo(0, 0)
   }
-})
+});
 </script>
 
 </html>

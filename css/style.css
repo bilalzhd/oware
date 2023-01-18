@@ -65,8 +65,15 @@ h2 {
 }
 
 .video-container {
-    width: 60%;
+    width: 50%;
     height: 50%;
+    opacity: 0.5;
+    transition: all 0.8s;
+}
+#neonNet {
+    width: 40%; 
+    opacity: 0.5;
+    transition: all 0.8s;
 }
 
 .fullscreen-bg__video {
@@ -681,7 +688,7 @@ h2 {
 }
 
 .nav-link {
-    color: #fff !important;
+    color: #fff;
 }
 
 .nav-link:hover {
@@ -1143,6 +1150,8 @@ ul.nav.flex-column {
 .logo {
     width: 150px;
     height: 40px;
+    opacity: 0.1;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media screen and (min-width: 400px) and (max-width: 420px) {
@@ -1368,6 +1377,7 @@ ul.nav.flex-column {
     text-decoration: none;
     color: #0E2048;
     font-weight: 400;
+    display: none;
 }
 
 .bg-dark {
@@ -1473,7 +1483,13 @@ ul.nav.flex-column {
     font-size: 327px;
     position: absolute;
     top: -15%;
-    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+#header-text {
+    opacity: 0;
+    transition: all 1s ease-in;
 }
