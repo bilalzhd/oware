@@ -74,6 +74,7 @@ h2 {
     width: 40%; 
     opacity: 0.5;
     transition: all 0.8s;
+    margin-top: 5rem;
 }
 
 .fullscreen-bg__video {
