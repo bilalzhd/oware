@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@200;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@300;700&display=swap');
 html, body {
     overflow-x: hidden;
     box-sizing: border-box !important;
@@ -15,6 +15,19 @@ body {
 a {
     text-decoration: none
 }
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+.fw-300 {
+    font-weight: 300;
+}
+section {
+    margin: 3rem auto;
+}
+section#footer, section#navbar {
+    margin: 0;
+}
+
 .main-clr {
     color: var(--main-clr);
 }
@@ -220,7 +233,7 @@ h2 {
     padding: 10rem 6rem;
 }
 #client-vid {
-    opacity: 0.4;
+    opacity: 0.8;
 }
 .testimonial-text {
     border-bottom: 1px solid black; 
@@ -290,6 +303,9 @@ h2 {
 @media screen and (max-width: 767px) {
     #main-header {
         height: 100vh;
+    }
+    .md-col-reverse {
+        flex-direction: column-reverse !important;
     }
     #clients {
         max-height: 65vh !important;
@@ -700,17 +716,20 @@ input[type="checkbox"]:focus {
     left: 100px;
 }
 .client-card {
-    min-width: 300px;
-    height: 220px;
+    min-width: 280px;
+    height: 200px;
     background-color: #131313;
     filter: grayscale(1);
     box-shadow: 0 3px 10px rgba(49, 48, 48, 0.5);
     border-radius: 10px;
     transition: 0.7s all;
 }
+.client-card:hover {
+    filter: grayscale(0);
+}
 .greyImg {
-    min-width: 300px;
-    height: 220px;
+    min-width: 280px;
+    height: 200px;
     background-color: #131313;
     box-shadow: 0 3px 10px rgba(49, 48, 48, 0.5);
     border-radius: 10px;
@@ -750,11 +769,11 @@ input[type="checkbox"]:focus {
     filter: grayscale(0);
 }
 .client-list-top, .client-list-bottom {
-    gap: 250px;
+    gap: 150px;
 }
 .client-list-bottom {
-    transform: translateX(-100px);
-    position: absolute;
+    transform: translate(-40px, -30px);
+    /* position: absolute; */
     top: 80%;
 }
 .clients-cards {
@@ -774,7 +793,6 @@ input[type="checkbox"]:focus {
 }
 .footer-col {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -1111,7 +1129,6 @@ ul.nav.flex-column {
     margin-right: 16px;
 }
 #phoneNumber {
-    display: none;
     transition-duration: 0.5s;
     transition-property: all;
     text-decoration: none;
@@ -1159,17 +1176,17 @@ ul.nav.flex-column {
     max-width: 400px;
     border-radius: 10px !important;
 }
-.card p {
+.card.warehousing p {
    position: absolute;
    top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   left: 42%;
+   transform: translate(-39%, -50%);
 }
 .card.logistics p {
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-11%, -50%);
+    left: 21%;
+    transform: translate(-10%, -50%);
 }
 .card.platform p {
     position: absolute;
@@ -1185,9 +1202,13 @@ ul.nav.flex-column {
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 1s;
+    border-radius: 10px;
 }
 .card:hover::before, .card:hover p {
     opacity: 0;
+}
+.cardImages {
+    border-radius: 10px;
 }

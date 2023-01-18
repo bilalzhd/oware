@@ -1,38 +1,38 @@
-function toggleCardText(id, event) {
-  let card = document.getElementById(id + "-card");
-  if (event === "mouseover") {
-    card.addEventListener(event, e => {
-      document.getElementById(id).style.opacity = 1
-      document.getElementById(id + "-title").style.transform = "translateY(100px)"
-    })
-  } else {
-    card.addEventListener(event, e => {
-      document.getElementById(id).style.opacity = 0;
-      document.getElementById(id + "-title").style.transform = "translateY(0px)";
-    });
-  }
-}
+// function toggleCardText(id, event) {
+//   let card = document.getElementById(id + "-card");
+//   if (event === "mouseover") {
+//     card.addEventListener(event, e => {
+//       document.getElementById(id).style.opacity = 1
+//       document.getElementById(id + "-title").style.transform = "translateY(100px)"
+//     })
+//   } else {
+//     card.addEventListener(event, e => {
+//       document.getElementById(id).style.opacity = 0;
+//       document.getElementById(id + "-title").style.transform = "translateY(0px)";
+//     });
+//   }
+// }
 
-let circles = document.querySelectorAll(".circle");
-circles.forEach(e => e.addEventListener("mouseover", e => {
-  let t = e.target.getAttribute("data-city");
-  document.getElementById(t).style.opacity = 1;
-}))
-circles.forEach(e => e.addEventListener("mouseleave", e => {
-  let t = e.target.getAttribute("data-city");
-  document.getElementById(t).style.opacity = 0
-}));
-toggleCardText("warehousing", "mouseover")
-toggleCardText("logistics", "mouseover")
-toggleCardText("platform", "mouseover")
-toggleCardText("warehousing", "mouseleave")
-toggleCardText("logistics", "mouseleave")
-toggleCardText("platform", "mouseleave")
+// let circles = document.querySelectorAll(".circle");
+// circles.forEach(e => e.addEventListener("mouseover", e => {
+//   let t = e.target.getAttribute("data-city");
+//   document.getElementById(t).style.opacity = 1;
+// }))
+// circles.forEach(e => e.addEventListener("mouseleave", e => {
+//   let t = e.target.getAttribute("data-city");
+//   document.getElementById(t).style.opacity = 0
+// }));
+// toggleCardText("warehousing", "mouseover")
+// toggleCardText("logistics", "mouseover")
+// toggleCardText("platform", "mouseover")
+// toggleCardText("warehousing", "mouseleave")
+// toggleCardText("logistics", "mouseleave")
+// toggleCardText("platform", "mouseleave")
 
-var swiper = new Swiper(".testimonial", {
-  spaceBetween: 20, loop: !0, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-  breakpoints: { 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-});
+// var swiper = new Swiper(".testimonial", {
+//   spaceBetween: 20, loop: !0, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+//   breakpoints: { 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+// });
 
 // window.addEventListener("scroll", function () {
 //   document.querySelector("#navbar").classList.toggle("fixed", window.scrollY > 60)
@@ -174,35 +174,35 @@ const animateBottom = (elem) => [
     translateX(elem, countBottom);
   }, 1)
 ]
-animateTop(clientListTop)
-animateBottom(clientListBottom)
+// animateTop(clientListTop)
+// animateBottom(clientListBottom)
 
-let bazar = document.querySelector('#bazar');
-let bazar2 = document.querySelector('#bazar2');
-let kravemart = document.querySelector('#kravemart');
-let unilever = document.querySelector('#unilever');
-let iffco = document.querySelector('#iffco');
-let iffco2 = document.querySelector('#iffco2');
-let rholab = document.querySelector('#rholab');
+// let bazar = document.querySelector('#bazar');
+// let bazar2 = document.querySelector('#bazar2');
+// let kravemart = document.querySelector('#kravemart');
+// let unilever = document.querySelector('#unilever');
+// let iffco = document.querySelector('#iffco');
+// let iffco2 = document.querySelector('#iffco2');
+// let rholab = document.querySelector('#rholab');
 
-function toggleImageOnCard(target, address1, address2) {
-    target.addEventListener('mouseover', () => {
-      let image = target.children[0];
-      image.removeAttribute('src');
-      image.setAttribute('src', address1)
-  })
-    target.addEventListener('mouseleave', () => {
-      let image = target.children[0];
-      image.removeAttribute('src');
-      image.setAttribute('src', address2)
-    })
-}
-let initAdd = 'assets/pitchlogos/'
-toggleImageOnCard(bazar, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
-toggleImageOnCard(bazar2, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
-toggleImageOnCard(kravemart, initAdd + 'kravemartwhite.png', initAdd + 'Kravemart-grey.png');
-toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
-toggleImageOnCard(iffco, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
-toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
-toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
+// function toggleImageOnCard(target, address1, address2) {
+//     target.addEventListener('mouseover', () => {
+//       let image = target.children[0];
+//       image.removeAttribute('src');
+//       image.setAttribute('src', address1)
+//   })
+//     target.addEventListener('mouseleave', () => {
+//       let image = target.children[0];
+//       image.removeAttribute('src');
+//       image.setAttribute('src', address2)
+//     })
+// }
+// let initAdd = 'assets/pitchlogos/'
+// toggleImageOnCard(bazar, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
+// toggleImageOnCard(bazar2, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
+// toggleImageOnCard(kravemart, initAdd + 'kravemartwhite.png', initAdd + 'Kravemart-grey.png');
+// toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
+// toggleImageOnCard(iffco, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
+// toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
+// toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
 
