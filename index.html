@@ -15,135 +15,134 @@
 
 <body>
 
-    <div id="main-header">
-        <section id="navbar">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="d-flex justify-content-between flex-row" style="width: 100%">
-                        <!-- <div class="col-md-1 col-sm-0 col-lg-1"></div> -->
-                        <div class="d-flex">
-                            <a class="navbar-brand ml-lg-2" href="/"><img class="logo" src="assets/logodark.png"
-                                    alt="Oware"></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link secondary-clr active mx-3" aria-current="page" href="#">COMPANY</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link secondary-clr mx-3" href="#">SERVICES</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link secondary-clr mx-3" href="#">CULTURE</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link secondary-clr mx-3" href="#">NEWSROOM</a>
-                                    </li>
-                                </ul>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between flex-row" style="width: 100%">
+                    <!-- <div class="col-md-1 col-sm-0 col-lg-1"></div> -->
+                    <div class="d-flex">
+                        <a class="navbar-brand ml-lg-2" href="/"><img class="logo" src="assets/logodark.png"
+                                alt="Oware"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-clr active mx-3" aria-current="page"
+                                        href="#">COMPANY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-clr mx-3" href="#">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-clr mx-3" href="#">CULTURE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link secondary-clr mx-3" href="#">NEWSROOM</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                                <button id="phoneCall"
+                                    class="callIcon d-flex align-items-center justify-content-center">
+                                    <img src="./assets/call.png" alt="Call Icon" />
+                                    <a class="mx-2" id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
+                                </button>
+                                <button class="button login">LOGIN</button>
+                                <button class="mx-3 button get-started" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" type="submit">GET STARTED</button>
                             </div>
-                        </div>
-                        <div class="d-flex">
-                            <button id="phoneCall" class="callIcon d-flex align-items-center justify-content-center">
-                                <img src="./assets/call.png" alt="Call Icon" />
-                                <a class="mx-2" id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
-                            </button>
-                            <button class="button login">LOGIN</button>
-                            <button class="mx-3 button get-started" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" type="submit">GET STARTED</button>
                         </div>
                     </div>
-            </nav>
-        </section>
-        <!-- MODAL -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5 secondary-clr" id="exampleModalLabel">Get Started</h1>
-                        <p class="secondary-clr">Fill out the form below to get access to on-demand warehousing and
-                            visual data tracking with Oware’s network.</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row mb-4">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="First name*"
-                                    aria-label="First name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name">
-                            </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 secondary-clr" id="exampleModalLabel">Get Started</h1>
+                    <p class="secondary-clr">Fill out the form below to get access to on-demand warehousing and
+                        visual data tracking with Oware’s network.</p>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name*" aria-label="First name">
                         </div>
-                        <div class="row mb-4">
-                            <div class="col">
-                                <input type="email" class="form-control" placeholder="Email Address"
-                                    aria-label="Email Address">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Contact #*"
-                                    aria-label="Contact #*">
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Company Name"
-                                    aria-label="Company Name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Designation"
-                                    aria-label="Designation">
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col">
-                                <textarea type="text" class="form-control" placeholder="Do you have a message for us?"
-                                    aria-label="Do you have a message for us?" cols="1"></textarea>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <p class="form-check-label" for="flexCheckDefault">
-                                Would you like to sign up for O-nexus now?
-                            </p>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name">
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button get-started">Submit</button>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email Address"
+                                aria-label="Email Address">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Contact #*" aria-label="Contact #*">
+                        </div>
                     </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Company Name"
+                                aria-label="Company Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Designation" aria-label="Designation">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <textarea type="text" class="form-control" placeholder="Do you have a message for us?"
+                                aria-label="Do you have a message for us?" cols="1"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="form-check-label" for="flexCheckDefault">
+                            Would you like to sign up for O-nexus now?
+                        </p>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button get-started">Submit</button>
                 </div>
             </div>
         </div>
-
-        <section id="main-header" style="margin-top: 2rem; position: relative;">
-            <div class="container">
-                <p class="logoAnimated">OWARE</p>
-                <div id="header-text" class="w-50">
-                    <p class="fw-700 secondary-clr" style="font-size: 19px;">DISRUPTING B2B SUPPLY CHAINS THROUGH OUR
-                        INTEGRATED DIGITAL INFRASTRUCTURE </p>
-                    <p class="secondary-clr" style="font-size: 16px;">Our mission is to help businesses access, scale
-                        and optimize.
-                    </p>
-                    <div class="d-flex flex-row align-items-center" style="gap: 4px">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=nQQJpmiV4kU"><img
-                                src="./assets/play.png" alt="PLAY"></a>
-                        <p class="secondary-clr m-0">What is <span class="fw-700">OWARE</span>?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex flex-column align-items-center container-fluid" style="padding: 0; position: relative;">
-                <img src="./assets/neon-net.png" id="neonNet">
-                <div class="video-container">
-                    <video loop muted autoplay class="fullscreen-bg__video">
-                        <source src="assets/truck-animation-new.webm" type="video/mp4">
-                    </video>
-                </div>
-                <img class="greywaves" src="./assets/grey-waves.png" height="527px" alt="">
-            </div>
     </div>
+
+    <section id="main-header" style="position: relative;">
+        <div class="container">
+            <p class="logoAnimated">OWARE</p>
+            <div id="header-text" class="w-50 header-text-a">
+                <p class="fw-700 secondary-clr" style="font-size: 19px;">DISRUPTING B2B SUPPLY CHAINS THROUGH OUR
+                    INTEGRATED DIGITAL INFRASTRUCTURE </p>
+                <p class="secondary-clr" style="font-size: 16px;">Our mission is to help businesses access, scale
+                    and optimize.
+                </p>
+                <div class="d-flex flex-row align-items-center" style="gap: 4px">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=nQQJpmiV4kU"><img src="./assets/play.png"
+                            alt="PLAY"></a>
+                    <p class="secondary-clr m-0">What is <span class="fw-700">OWARE</span>?</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center container-fluid" style="padding: 0; position: relative;">
+            <img src="./assets/neon-net.png" id="neonNet">
+            <div class="video-container">
+                <video loop muted autoplay class="fullscreen-bg__video">
+                    <source src="assets/truck-animation-new.webm" type="video/mp4">
+                </video>
+            </div>
+            <img class="greywaves" src="./assets/grey-waves.png" height="527px" alt="">
+        </div>
+        </div>
     </section>
     </div>
 
@@ -152,7 +151,8 @@
         <div class="container d-flex flex-column align-items-center p-4">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column" style="padding-left: 30px; padding-right: 30px; gap: 40px;">
-                    <h2 class="main-clr">Gain access to the world of on-demand warehousing & fulfillment at your
+                    <h2 class="main-clr gain-access">Gain access to the world of on-demand warehousing & fulfillment at
+                        your
                         fingertips through O-Nexus.</h2>
                     <p class="secondary-clr">O-Nexus gives you the ability to reserve your own space at any time and
                         from any location; driven by a dynamic warehousing solution and logistics support, providing
@@ -324,8 +324,7 @@
         <div class="clients-inner">
             <div class="text-content">
                 <h2 class="text-center simplifying-heading hidden" id="simplifyingHeading"><span
-                        class="font-thin2">OUR</span> HAPPY
-                    CUSTOMERS</h2>
+                        class="font-thin2">OUR</span> CLIENTS</h2>
                 <p class="secondary-clr text-center" id="simplifyingText">Book your own warehouse space by connecting
                     with our
                     network.</p>
@@ -366,103 +365,6 @@
             <img class="small hiddenArrow arrow" src="assets/arrow.png" alt="">
         </div>
     </section>
-
-    <!-- <section id="testimonials">
-        <h2 class="mx-auto text-center simplifying-heading hidden" id="seeingIsBelieving"><span
-                class="font-thin2">SEEING IS </span>BELIEVING</h2>
-        Swiper --
-        <div class="swiper testimonial">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide p-4">
-                    <div class="d-flex align-items-center justify-content-center flex-column">
-                        <img src="assets/ammarshakeel.jfif" class="test-imgs br-50" alt="">
-                        <div class="mt-4">
-                            <div class="d-flex align-items-center flex-column justify-content-center">
-                                <div class="testimonial-text">
-                                    <h3 class="main-clr text-center">
-                                        Ammar Shakeel</h3>
-                                    <h6 class="text-center secondary-clr">Deputy Director Supply Chain Lotte Akhtar</h6>
-                                </div>
-                                <p class="test-text hidden secondary-clr">We have started using supply chain services
-                                    from Oware in 2021. Really impressed to see the dedication, professionalism and
-                                    agility of team. Looking forward to an extended long term business partnership in
-                                    coming times.
-                                </p>
-                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide p-4">
-                    <div class="d-flex align-items-center justify-content-center flex-column">
-                        <img src="assets/hashimkhan.jfif" class="test-imgs br-50" alt="">
-                        <div class="mt-4">
-                            <div class="d-flex align-items-center flex-column justify-content-center">
-                                <div class="testimonial-text">
-                                    <h3 class="main-clr text-center">
-                                        Hashim Khan</h3>
-                                    <h6 class="text-center secondary-clr">Operations Bazaar Technologies</h6>
-                                </div>
-                                <p class="test-text hidden secondary-clr">Our experience with Oware has been great and
-                                    one of mutual learning. Our search for a 3PL to absorb our variation in demand
-                                    wasn't easy. Being B2B, our fulfilment and tracking looked very different from
-                                    traditional B2C E commerce players. We tried working with multiple partners but in
-                                    Oware we found agility, reliability and a business partner mentality.
-                                </p>
-                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide p-4">
-                    <div class="d-flex align-items-center justify-content-center flex-column">
-                        <img src="assets/jarrarshah.png" class="test-imgs br-50" alt="">
-                        <div class="mt-4">
-                            <div class="d-flex align-items-center flex-column justify-content-center">
-                                <div class="testimonial-text">
-                                    <h3 class="main-clr text-center">
-                                        Jarrar Shah</h3>
-                                    <h6 class="text-center secondary-clr">Founder & CEO 24/7 Technologies</h6>
-                                </div>
-                                <p class="test-text hidden secondary-clr">Oware has been a breath of fresh air for
-                                    us,
-                                    helping us scale faster in a capital efficient manner taking away the hassle of
-                                    warehousing and fulfilment and letting us focus on scaling our brand and
-                                    network.
-                                    Their team is extremely professional and our relationship is one of a true
-                                    partnership rather than a transaction.
-                                </p>
-                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide p-4">
-                    <div class="d-flex align-items-center justify-content-center flex-column">
-                        <img src="assets/ali.png" class="test-imgs br-50" alt="">
-                        <div class="mt-4">
-                            <div class="d-flex align-items-center flex-column justify-content-center">
-                                <div class="testimonial-text">
-                                    <h3 class="main-clr text-center">
-                                        Mohammad Ali</h3>
-                                    <h6 class="text-center secondary-clr">Assistant Manager Procurement Pandamart</h6>
-                                </div>
-                                <p class="test-text hidden secondary-clr">Their attention to resolving queries is
-                                    commendable & are driven to provide one of the finest logistics services to Us.
-                                    Great Offerings & Great Flexibility.
-                                </p>
-                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section> -->
 
     <section id="footer" class="footer-bg">
         <div class="container" style="border-bottom: 1px solid #0E2048; padding-bottom: 1rem">
@@ -533,52 +435,52 @@
         phoneLink.style.display = "none";
     })
     function toggleImageOnCard(target, address1, address2) {
-    target.addEventListener('mouseover', () => {
-      let image = target.children[0];
-      image.removeAttribute('src');
-      image.setAttribute('src', address1)
-  })
-    target.addEventListener('mouseleave', () => {
-      let image = target.children[0];
-      image.removeAttribute('src');
-      image.setAttribute('src', address2)
-    })
-}
-let initAdd = 'assets/pitchlogos/';
-let unilever = document.querySelector('#unilever');
-toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
+        target.addEventListener('mouseover', () => {
+            let image = target.children[0];
+            image.removeAttribute('src');
+            image.setAttribute('src', address1)
+        })
+        target.addEventListener('mouseleave', () => {
+            let image = target.children[0];
+            image.removeAttribute('src');
+            image.setAttribute('src', address2)
+        })
+    }
+    let initAdd = 'assets/pitchlogos/';
+    let unilever = document.querySelector('#unilever');
+    toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
 
-let animatedLogoText = document.querySelector('.logoAnimated');
-let headerText = document.querySelector('#header-text');
-let video = document.querySelector('.video-container');
-let neonNet = document.querySelector('#neonNet');
-let logo = document.querySelector('.logo');
-// let initialOpacity = animatedLogoText.style.opacity;
-let scrollPos = window.pageYOffset;
-let prevScrollPos = 0;
-let isTextInvisible = false;
+    let animatedLogoText = document.querySelector('.logoAnimated');
+    let headerText = document.querySelector('#header-text');
+    let video = document.querySelector('.video-container');
+    let neonNet = document.querySelector('#neonNet');
+    let logo = document.querySelector('.logo');
+    // let initialOpacity = animatedLogoText.style.opacity;
+    let scrollPos = window.pageYOffset;
+    let prevScrollPos = 0;
+    let isTextInvisible = false;
 
-// Add a scroll event listener
-window.addEventListener('scroll', function(event) {
-  prevScrollPos = scrollPos;
-  scrollPos = window.pageYOffset;
+    // Add a scroll event listener
+    window.addEventListener('scroll', function (event) {
+        prevScrollPos = scrollPos;
+        scrollPos = window.pageYOffset;
 
-  // Check if the user is scrolling down and the text has not yet become invisible
-  if (scrollPos > prevScrollPos && !isTextInvisible) {
-    animatedLogoText.style.opacity = 0;
-    // animatedLogoText.style.width = 0;
-    // animatedLogoText.style.height = 0;
-    logo.style.opacity = 1;
-    headerText.style.opacity = 1;
-    video.style.width = '60%';
-    video.style.opacity = 1;
-    neonNet.style.width = '55%';
-    neonNet.style.opacity = 1;
-    neonNet.style.marginTop = 0;
-    isTextInvisible = true;
-    window.scrollTo(0, 0)
-  }
-});
+        // Check if the user is scrolling down and the text has not yet become invisible
+        if (scrollPos > prevScrollPos && !isTextInvisible) {
+            animatedLogoText.style.opacity = 0;
+            // animatedLogoText.style.width = 0;
+            // animatedLogoText.style.height = 0;
+            logo.style.opacity = 1;
+            headerText.style.opacity = 1;
+            video.style.width = '60%';
+            video.style.opacity = 1;
+            neonNet.style.width = '55%';
+            neonNet.style.opacity = 1;
+            neonNet.style.marginTop = 0;
+            isTextInvisible = true;
+            window.scrollTo(0, 0)
+        }
+    });
 </script>
 
 </html>
