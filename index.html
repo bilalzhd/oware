@@ -274,18 +274,76 @@
                 MANAGE, &amp; OPTIMIZE <span style="font-weight: 400;">Your Network</span></h2>
             <div class="circle0 circle" data-city="karachi"></div>
             <div class="circle1 circle" data-city="gwadar"></div>
-            <div class="circle2 circle" data-city="multan"></div>
-            <div class="circle3 circle" data-city="sialkot"></div>
-            <div class="circle4 circle" data-city="quetta"></div>
-            <div class="circle5 circle circleSm" data-city="faisalabad"></div>
-            <div class="circle6 circle circleSm" data-city="lahore"></div>
-            <div class="circle7 circle" data-city="rawalpindi"></div>
-            <div class="circle8 circle" data-city="islamabad"></div>
-            <div class="circle9 circle" data-city="gujranwala"></div>
-            <div class="circle10 circle" data-city="bahawalpur"></div>
-            <div class="circle11 circle" data-city="mirpurkhas"></div>
-            <div class="circle12 circle" data-city="sukkur"></div>
-            <div class="circle13 circle" data-city="hyderabad"></div>
+            <div class="circle2 circle" data-city="hyderabad"></div>
+            <div class="circle3 circle" data-city="mirpurkhas"></div>
+            <div class="circle4 circle" data-city="sukkur"></div>
+            <div class="circle5 circle circleSm" data-city="bahawalpur"></div>
+            <div class="circle6 circle circleSm" data-city="multan"></div>
+            <div class="circle7 circle" data-city="faisalabad"></div>
+            <div class="circle8 circle circleSm" data-city="lahore"></div>
+            <div class="circle9 circle circleSm" data-city="gujranwala"></div>
+            <div class="circle10 circle" data-city="sialkot"></div>
+            <div class="circle11 circle" data-city="quetta"></div>
+            <div class="circle12 circle" data-city="peshawar"></div>
+            <div class="circle13 circle" data-city="islamabad"></div>
+        </div>
+        <div class="map-cards">
+            <div class="map-card" id="karachi">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Karachi</h5>
+            </div>
+            <div class="map-card" id="gwadar">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Gwadar</h5>
+            </div>
+            <div class="map-card" id="hyderabad">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Hyderabad</h5>
+            </div>
+            <div class="map-card" id="sukkur">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Sukkur</h5>
+            </div>
+            <div class="map-card" id="lahore">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Lahore</h5>
+            </div>
+            <div class="map-card" id="faisalabad">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Faisalabad</h5>
+            </div>
+            <div class="map-card" id="islamabad">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Islamabad</h5>
+            </div>
+            <div class="map-card" id="peshawar">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Peshawar</h5>
+            </div>
+            <div class="map-card" id="sialkot">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Sialkot</h5>
+            </div>
+            <div class="map-card" id="gujranwala">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Gujranwala</h5>
+            </div>
+            <div class="map-card" id="bahawalpur">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Bahawalpur</h5>
+            </div>
+            <div class="map-card" id="multan">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Multan</h5>
+            </div>
+            <div class="map-card" id="quetta">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Quetta</h5>
+            </div>
+            <div class="map-card" id="mirpurkhas">
+                <img class="logoImageSm" src="./assets/logoImage.png" alt="Logo Image">
+                <h5 class="text-light">Mirpur Khas</h5>
+            </div>
         </div>
         <div class="d-flex">
             <img class="w-50" style="object-fit: cover;" src="./assets/geometricdown.png" alt="">
@@ -520,6 +578,37 @@
             window.scrollTo(0, 0)
         }
     });
+    function toggleCardText(id, event) {
+        let card = document.getElementById(id + "-card");
+        if (event === "mouseover") {
+            card.addEventListener(event, e => {
+                document.getElementById(id).style.opacity = 1
+                document.getElementById(id + "-title").style.transform = "translateY(100px)"
+            })
+        } else {
+            card.addEventListener(event, e => {
+                document.getElementById(id).style.opacity = 0;
+                document.getElementById(id + "-title").style.transform = "translateY(0px)";
+            });
+        }
+    }
+
+    let circles = document.querySelectorAll(".circle");
+    circles.forEach(e => e.addEventListener("mouseover", e => {
+        let t = e.target.getAttribute("data-city");
+        document.getElementById(t).style.opacity = 1;
+    }))
+    circles.forEach(e => e.addEventListener("mouseleave", e => {
+        let t = e.target.getAttribute("data-city");
+        document.getElementById(t).style.opacity = 0
+    }));
+    toggleCardText("warehousing", "mouseover")
+    toggleCardText("logistics", "mouseover")
+    toggleCardText("platform", "mouseover")
+    toggleCardText("warehousing", "mouseleave")
+    toggleCardText("logistics", "mouseleave")
+    toggleCardText("platform", "mouseleave")
+
 </script>
 
 </html>

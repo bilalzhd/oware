@@ -126,14 +126,18 @@ h2 {
 
 .map-card {
     position: absolute;
-    width: 200px;
-    height: 100px;
-    background-color: #000;
+    width: 180px;
+    height: 54px;
+    background-color: var(--secondary-clr);
     z-index: 2;
-    border-radius: 5px;
-    padding: 1rem;
+    border-radius: 10px;
     transition: 0.2s all;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
 }
 
 .map-cardSm {
@@ -149,7 +153,11 @@ h2 {
 }
 
 .map-card h5 {
-    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24.7px;
+    text-align: center;
+    margin-bottom: 0 !important;
 }
 
 .map-cardSm h5 {
@@ -205,13 +213,13 @@ h2 {
     left: 67%;
 }
 .circle8 {
-    bottom: 50%;
-    left: 72%;
+    bottom: 53%;
+    left: 73%;
 }
 
 .circle9 {
-    bottom: 56%;
-    left: 72%;
+    bottom: 58%;
+    left: 73%;
 }
 .circle10 {
     bottom: 61%;
@@ -230,13 +238,33 @@ h2 {
     left: 70%;
 }
 #karachi {
-    bottom: 24%;
-    left: 27%;
+    bottom: 52.2%;
+    left: 46%;
+}
+#hyderabad {
+    bottom: 52.5%;
+    left: 47%;
+}
+#mirpurkhas {
+    bottom: 52.8%;
+    left: 49%;
+}
+#sukkur {
+    bottom: 54%;
+    left: 49%;
 }
 
 #faisalabad {
-    bottom: 65%;
-    left: 52%;
+    bottom: 57.2%;
+    left: 59%;
+}
+#gujranwala {
+    bottom: 58.3%;
+    left: 63%;
+}
+#sialkot {
+    bottom: 58.8%;
+    left: 65%;
 }
 
 .mt-lg-3 {
@@ -245,33 +273,37 @@ h2 {
 }
 
 #gwadar {
-    bottom: 27%;
-    left: 1%;
+    bottom: 53%;
+    left: 31%;
 }
 
 #multan {
-    bottom: 48%;
-    left: 39%;
+    bottom: 56.5%;
+    left: 57%;
 }
 
 #lahore {
-    bottom: 71%;
+    bottom: 58%;
     left: 65%;
 }
 
 #islamabad {
-    bottom: 78%;
-    left: 60%;
+    bottom: 59.6%;
+    left: 62%;
 }
 
 #peshawar {
-    bottom: 80%;
-    left: 51%;
+    bottom: 60.2%;
+    left: 57%;
 }
 
 #quetta {
-    bottom: 60%;
-    left: 30%;
+    bottom: 56.6%;
+    left: 42.5%;
+}
+#bahawalpur {
+    bottom: 55.9%;
+    left: 57.5%;
 }
 
 .front-heading {
@@ -1214,7 +1246,10 @@ ul.nav.flex-column {
     opacity: 0.1;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+.circleSm {
+    width: 45px;
+    height: 45px;
+}
 @media screen and (min-width: 400px) and (max-width: 420px) {
     .circleSm {
         width: 20px;
@@ -1554,4 +1589,8 @@ ul.nav.flex-column {
 #header-text {
     opacity: 0;
     transition: all 1s ease-in;
+}
+.logoImageSm {
+    width: 38px;
+    height: 38px;
 }

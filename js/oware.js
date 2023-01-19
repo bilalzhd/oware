@@ -13,15 +13,7 @@
 //   }
 // }
 
-// let circles = document.querySelectorAll(".circle");
-// circles.forEach(e => e.addEventListener("mouseover", e => {
-//   let t = e.target.getAttribute("data-city");
-//   document.getElementById(t).style.opacity = 1;
-// }))
-// circles.forEach(e => e.addEventListener("mouseleave", e => {
-//   let t = e.target.getAttribute("data-city");
-//   document.getElementById(t).style.opacity = 0
-// }));
+o
 // toggleCardText("warehousing", "mouseover")
 // toggleCardText("logistics", "mouseover")
 // toggleCardText("platform", "mouseover")
@@ -164,7 +156,7 @@ const animateTop = (elem) => {
   }, 1)
 
 }
-const animateBottom = (elem) => [
+const animateBottom = (elem) => {
   setInterval(function () {
     countBottom = countBottom - 0.5;
     if (countBottom < (width - 1465)) {
@@ -173,7 +165,7 @@ const animateBottom = (elem) => [
     }
     translateX(elem, countBottom);
   }, 1)
-]
+}
 // animateTop(clientListTop)
 // animateBottom(clientListBottom)
 
