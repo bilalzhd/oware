@@ -545,3 +545,102 @@
             </div>
         </div>
     </section> -->
+
+
+
+    !-- <section id="testimonials">
+        <h2 class="mx-auto text-center simplifying-heading hidden" id="seeingIsBelieving"><span
+                class="font-thin2">SEEING IS </span>BELIEVING</h2>
+        Swiper --
+        <div class="swiper testimonial">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/ammarshakeel.jfif" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Ammar Shakeel</h3>
+                                    <h6 class="text-center secondary-clr">Deputy Director Supply Chain Lotte Akhtar</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">We have started using supply chain services
+                                    from Oware in 2021. Really impressed to see the dedication, professionalism and
+                                    agility of team. Looking forward to an extended long term business partnership in
+                                    coming times.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/hashimkhan.jfif" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Hashim Khan</h3>
+                                    <h6 class="text-center secondary-clr">Operations Bazaar Technologies</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Our experience with Oware has been great and
+                                    one of mutual learning. Our search for a 3PL to absorb our variation in demand
+                                    wasn't easy. Being B2B, our fulfilment and tracking looked very different from
+                                    traditional B2C E commerce players. We tried working with multiple partners but in
+                                    Oware we found agility, reliability and a business partner mentality.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/jarrarshah.png" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Jarrar Shah</h3>
+                                    <h6 class="text-center secondary-clr">Founder & CEO 24/7 Technologies</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Oware has been a breath of fresh air for
+                                    us,
+                                    helping us scale faster in a capital efficient manner taking away the hassle of
+                                    warehousing and fulfilment and letting us focus on scaling our brand and
+                                    network.
+                                    Their team is extremely professional and our relationship is one of a true
+                                    partnership rather than a transaction.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <img src="assets/ali.png" class="test-imgs br-50" alt="">
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center flex-column justify-content-center">
+                                <div class="testimonial-text">
+                                    <h3 class="main-clr text-center">
+                                        Mohammad Ali</h3>
+                                    <h6 class="text-center secondary-clr">Assistant Manager Procurement Pandamart</h6>
+                                </div>
+                                <p class="test-text hidden secondary-clr">Their attention to resolving queries is
+                                    commendable & are driven to provide one of the finest logistics services to Us.
+                                    Great Offerings & Great Flexibility.
+                                </p>
+                                <a class="read border-0 main-clr text-decoration-none" data-id="ayaz">Read More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section> -->

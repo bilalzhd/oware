@@ -381,8 +381,17 @@ h2 {
 @media screen and (max-width: 767px) {
     #main-header {
         height: 100vh;
+        margin-top: 6rem;
     }
-
+    .header-text-a{
+        width: 100% !important;
+    }
+    .gain-access {
+        font-size: 1.4rem
+    }
+    .logoAnimated {
+        font-size: 1rem;
+    }
     .md-col-reverse {
         flex-direction: column-reverse !important;
     }
