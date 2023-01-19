@@ -37,7 +37,12 @@ section#footer,
 section#navbar {
     margin: 0;
 }
-
+#navbar {
+    padding-top: 1rem;
+}
+.navbar-nav.me-auto {
+    gap: 25px;
+}
 .main-clr {
     color: var(--main-clr);
 }
@@ -98,12 +103,6 @@ h2 {
     left: 125px;
     width: 40%;
 }
-
-.text-content {
-    position: absolute;
-    left: 25%;
-}
-
 .greywaves {
     position: absolute;
     bottom: 0;
@@ -159,8 +158,8 @@ h2 {
 
 .circle {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: #6AFFFF;
     border-radius: 80%;
     z-index: 10000;
@@ -168,49 +167,68 @@ h2 {
 }
 
 .circle0 {
-    bottom: 11%;
-    left: 33%;
+    bottom: 2%;
+    left: 48%;
 }
 
 .circle1 {
-    bottom: 17%;
-    left: 2%;
+    bottom: 10%;
+    left: 32%;
 }
 
 .circle2 {
-    bottom: 35%;
-    left: 44%;
+    bottom: 8%;
+    left: 51.5%;
+}
+.circle3 {
+    bottom: 11%;
+    left: 56%;
 }
 
 .circle4 {
-    bottom: 50%;
-    left: 34%;
+    bottom: 20%;
+    left: 55%;
 }
 
 .circle5 {
-    bottom: 50%;
-    left: 58%;
-}
-
-.circle6 {
-    bottom: 61%;
-    left: 71%;
-}
-
-/* .circle7 {
-    bottom: 460px;
-    left: 960px;
-} */
-.circle8 {
-    bottom: 70%;
+    bottom: 34%;
     left: 65%;
 }
 
-.circle9 {
-    bottom: 72%;
-    left: 57%;
+.circle6 {
+    bottom: 41%;
+    left: 63%;
 }
 
+.circle7 {
+    bottom: 48%;
+    left: 67%;
+}
+.circle8 {
+    bottom: 50%;
+    left: 72%;
+}
+
+.circle9 {
+    bottom: 56%;
+    left: 72%;
+}
+.circle10 {
+    bottom: 61%;
+    left: 74%;
+}
+.circle11 {
+    bottom: 40%;
+    left: 47%;
+}
+.circle12 {
+    bottom: 72%;
+    left: 64%;
+}
+.circle13 {
+    bottom: 68%;
+    left: 70%;
+}
 #karachi {
     bottom: 24%;
     left: 27%;
@@ -352,6 +370,9 @@ h2 {
         padding-top: 1rem !important;
     }
 
+    .abs {
+        height: 90vh;
+    }
 }
 
 #clients {
@@ -377,11 +398,44 @@ h2 {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
+.navbar-end-login-get-started {
+    gap: 10px;
+    flex-direction: row;
+}
 @media screen and (max-width: 767px) {
     #main-header {
-        height: 100vh;
+        /* height: 100vh; */
         margin-top: 6rem;
+    }
+    .abs {
+        height: auto
+    }
+    .client-card img {
+        width: 100px;
+    }
+    .client-card {
+        min-width: 120px !important;
+        max-height: 90px;
+    }
+    #mockup {
+        padding: 0 !important;
+    }
+    .fw-400.secondary-clr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mockup2 {
+        position: relative !important;
+    }
+    .navbar-nav.me-auto {
+        gap: 0;
+    }
+    .navbar-end-login-get-started {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mapImage {
+        width: 100%;
     }
     .header-text-a{
         width: 100% !important;
@@ -435,16 +489,15 @@ h2 {
 
     .client-list-top,
     .client-list-bottom {
-        gap: 80px !important;
+        gap: 0 !important;
     }
 
     .client-list-bottom {
-        top: 50% !important;
-        position: static !important;
+        transform: translate(-20px, -3px) !important
     }
 
     #navbar {
-        padding-top: 0.25rem !important;
+        /* padding-top: 0.25rem !important; */
         position: fixed !important;
         background-color: #fff;
         z-index: 10000;
@@ -536,16 +589,15 @@ h2 {
         max-width: 180px !important;
         max-height: 180px !important;
     }
-
-    .client-card {
-        min-width: 200px !important;
-        height: 180px !important;
-    }
-
     .greyImg {
-        min-width: 200px !important;
-        height: 180px !important;
+        min-width: 120px !important;
+        max-height: 90px;
     }
+    .greyImg img {
+        width: 100px;
+        height: 80px;
+    }
+    
 
     .invert {
         min-width: 200px !important;
@@ -704,7 +756,7 @@ h2 {
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--secondary-clr);
 }
 
 .nav-link:hover {
@@ -716,10 +768,6 @@ h2 {
     margin-right: 10rem;
 }
 
-#navbar {
-    transition: all 0.5s;
-    padding-top: 2rem;
-}
 
 .simplifying-heading {
     font-family: 'Raleway', sans-serif;
@@ -733,11 +781,12 @@ h2 {
 
 .abs {
     position: absolute;
-    top: 0px;
+    z-index: -10;
+    top: 40%;
+    /* height: 90vh; */
 }
 
 .clients-inner {
-    padding: 4rem 4rem;
     z-index: 200;
 }
 
@@ -968,10 +1017,6 @@ input[type="checkbox"]:focus {
     top: 80%;
 }
 
-.clients-cards {
-    position: absolute;
-    top: 35%;
-}
 
 #testimonials {
     padding: 8rem 4rem;
