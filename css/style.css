@@ -238,33 +238,33 @@ h2 {
     left: 70%;
 }
 #karachi {
-    bottom: 52.2%;
-    left: 46%;
+    bottom: 11%;
+    left: 44%;
 }
 #hyderabad {
-    bottom: 52.5%;
+    bottom: 15%;
     left: 47%;
 }
 #mirpurkhas {
-    bottom: 52.8%;
+    bottom: 17%;
     left: 49%;
 }
 #sukkur {
-    bottom: 54%;
+    bottom: 26%;
     left: 49%;
 }
 
 #faisalabad {
-    bottom: 57.2%;
-    left: 59%;
+    bottom: 53%;
+    left: 61%;
 }
 #gujranwala {
-    bottom: 58.3%;
-    left: 63%;
+    bottom: 62%;
+    left: 66%;
 }
 #sialkot {
-    bottom: 58.8%;
-    left: 65%;
+    bottom: 67%;
+    left: 68%;
 }
 
 .mt-lg-3 {
@@ -273,12 +273,12 @@ h2 {
 }
 
 #gwadar {
-    bottom: 53%;
-    left: 31%;
+    bottom: 18%;
+    left: 28%;
 }
 
 #multan {
-    bottom: 56.5%;
+    bottom: 48%;
     left: 57%;
 }
 
@@ -288,22 +288,22 @@ h2 {
 }
 
 #islamabad {
-    bottom: 59.6%;
-    left: 62%;
+    bottom: 74%;
+    left: 66%;
 }
 
 #peshawar {
-    bottom: 60.2%;
-    left: 57%;
+    bottom: 78%;
+    left: 60%;
 }
 
 #quetta {
-    bottom: 56.6%;
+    bottom: 47%;
     left: 42.5%;
 }
 #bahawalpur {
-    bottom: 55.9%;
-    left: 57.5%;
+    bottom: 42%;
+    left: 60%;
 }
 
 .front-heading {
