@@ -1473,7 +1473,9 @@ ul.nav.flex-column {
     text-decoration: none;
     color: #0E2048;
     font-weight: 400;
-    display: none;
+    display: block;
+    opacity: 0;
+    width: 0;
 }
 
 .bg-dark {
