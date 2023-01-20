@@ -530,7 +530,8 @@
         phoneLink.style.width = 'auto';
     });
     callBtn.addEventListener('blur', () => {
-        phoneLink.style.display = "none";
+        phoneLink.style.opacity = 0;
+        phoneLink.style.width = 0;
     })
     function toggleImageOnCard(target, address1, address2) {
         target.addEventListener('mouseover', () => {
