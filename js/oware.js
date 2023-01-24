@@ -98,7 +98,6 @@ window.addEventListener('scroll', function (event) {
 //   document.getElementById(t).style.opacity = 0
 // }));
 
-}
 const mobilePoster = "assets/map-potrait-placeholder.jpg";
 const desktopPoster = "assets/poster.png";
 
