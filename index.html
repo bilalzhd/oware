@@ -16,44 +16,6 @@
 <body>
 
     <section id="navbar">
-        <!-- <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between flex-row" style="width: 100%">
-                    <a class="navbar-brand ml-lg-2" href="/"><img class="logo" src="assets/logodark.png"
-                            alt="Oware"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse d-flex justify-content-between navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link secondary-clr active mx-3" aria-current="page" href="#">COMPANY</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link secondary-clr mx-3" href="#">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link secondary-clr mx-3" href="#">CULTURE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link secondary-clr mx-3" href="#">NEWSROOM</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex">
-                            <button id="phoneCall" class="callIcon d-flex align-items-center justify-content-center">
-                                <img src="./assets/call.png" alt="Call Icon" />
-                                <a class="mx-2" id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
-                            </button>
-                            <button class="button login">LOGIN</button>
-                            <button class="mx-3 button get-started" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal" type="submit">GET STARTED</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav> -->
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
                 <a class="navbar-brand ml-lg-2" href="/">
@@ -148,6 +110,13 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <iframe id="yt-player" width="100%" height="360" src="https://www.youtube.com/embed/nQQJpmiV4kU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <section id="main-header" style="position: relative;">
         <div class="container">
@@ -159,8 +128,9 @@
                     and optimize.
                 </p>
                 <div class="d-flex flex-row align-items-center" style="gap: 4px">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=nQQJpmiV4kU"><img src="./assets/play.png"
-                            alt="PLAY"></a>
+                    <button data-bs-toggle="modal" data-bs-target="#videoModal" class="border-0 bg-transparent" target="_blank"
+                        href="https://www.youtube.com/watch?v=nQQJpmiV4kU"><img src="./assets/play.png"
+                            alt="PLAY"></button>
                     <p class="secondary-clr m-0">What is <span class="fw-700">OWARE</span>?</p>
                 </div>
             </div>
@@ -183,18 +153,18 @@
         <div class="container d-flex flex-column align-items-center p-4">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column" style="padding-left: 30px; padding-right: 30px; gap: 40px;">
-                    <h2 class="main-clr gain-access">Gain access to the world of on-demand warehousing & fulfillment at
+                    <h2 class="main-clr gain-access fadeEl">Gain access to the world of on-demand warehousing & fulfillment at
                         your
                         fingertips through O-Nexus.</h2>
                     <p class="secondary-clr">O-Nexus gives you the ability to reserve your own space at any time and
                         from any location; driven by a dynamic warehousing solution and logistics support, providing
                         maximum visibility and control.</p>
                     <div class="buttons">
-                        <button class="button get-started">SIGN UP</button>
-                        <button class="button">LEARN MORE</button>
+                        <button class="button get-started fadeEl">SIGN UP</button>
+                        <button class="button fadeEl">LEARN MORE</button>
                     </div>
                 </div>
-                <div class="col-md-6" style="position: relative;">
+                <div class="col-md-6 mockupImages" style="position: relative;">
                     <img width="80%" class="mockup2 mx-auto" src="./assets/mockup.png" alt="Desktop">
                     <img width="30%" class="mockup1 mx-auto" src="./assets/mobile-mockup.png" alt="Mobile">
                 </div>
@@ -202,75 +172,10 @@
         </div>
     </section>
 
-    <!-- <section id="map">
-        <div class="outer-map">
-            <div class="circle0 circle" data-city="karachi"></div>
-            <div class="circle1 circle" data-city="gwadar"></div>
-            <div class="circle2 circle" data-city="multan"></div>
-            <div class="circle3 circle" data-city="sialkot"></div>
-            <div class="circle4 circle" data-city="quetta"></div>
-            <div class="circle5 circle circleSm" data-city="faisalabad"></div>
-            <div class="circle6 circle circleSm" data-city="lahore"></div>
-            <div class="circle7 circle" data-city="rawalpindi"></div>
-            <div class="circle8 circle" data-city="islamabad"></div>
-            <div class="circle9 circle" data-city="peshawar"></div>
-            <div class="fullscreen-bg">
-                <div class="video-text">
-                    <h2 class="text-white map-text hidden"><span class="font-thin2">O-NEXUS CONNECTS TO YOUR
-                            NETWORK</span>
-                        WHENEVER, WHEREVER, HOWEVER</h2>
-                </div>
-                <video loop muted autoplay id="vid" class="fullscreen-bg__video">
-                    <source type="video/mp4" src="./assets/map-without-border.mp4">
-                </video>
-                <div class="map-card" id="karachi">
-                    <h5 class="border-bottom text-light">Karachi</h5>
-                    <p class="text-white">3,780 km<sup>2</sup> </p>
-                </div>
-                <div class="map-card" id="gwadar">
-                    <h5 class="border-bottom text-light">Gwadar</h5>
-                    <p class="text-white">15,210 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="multan">
-                    <h5 class="border-bottom text-light">Multan</h5>
-                    <p class="text-white">3,721 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="quetta">
-                    <h5 class="border-bottom text-light">Quetta</h5>
-                    <p class="text-white">3,501 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="lahore">
-                    <h5 class="border-bottom text-light">Lahore</h5>
-                    <p class="text-white">1,772 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="faisalabad">
-                    <h5 class="border-bottom text-light">Faisalabad</h5>
-                    <p class="text-white">1,330 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="islamabad">
-                    <h5 class="border-bottom text-light">Islamabad</h5>
-                    <p class="text-white">906.5 km<sup>2</sup></p>
-                </div>
-                <div class="map-card" id="rawalpindi">
-                    <h5 class="border-bottom text-light">Rawalpindi</h5>
-                    <p class="text-white">Lorem ipsum dolor sit </p>
-                </div>
-                <div class="map-card" id="sialkot">
-                    <h5 class="border-bottom text-light">Sialkot</h5>
-                    <p class="text-white">Lorem ipsum dolor sit </p>
-                </div>
-                <div class="map-card" id="peshawar">
-                    <h5 class="border-bottom text-light">Peshawar</h5>
-                    <p class="text-white">215 km<sup>2</sup></p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section id="map">
         <div class="container d-flex flex-row-reverse" style="position: relative;">
             <img class="mapImage" src="./assets/map-final-new.png" alt="">
-            <h2 class="main-clr map-text">CONNECT,
+            <h2 class="main-clr map-text fadeEl">CONNECT,
                 MANAGE, &amp; OPTIMIZE <span style="font-weight: 400;">Your Network</span></h2>
             <div class="circle0 circle" data-city="karachi"></div>
             <div class="circle1 circle" data-city="gwadar"></div>
@@ -356,13 +261,14 @@
     <section id="supplychains">
         <div class="container">
             <div style="margin-bottom: 90px;">
-                <h2 class="text-center simplifying-heading"><span class="fw-400">SIMPLIFYING</span> SUPPLY CHAINS</h2>
-                <p class="text-center fw-400 secondary-clr" style="font-size: 20px;">We offer scalable and tech-driven
+                <h2 class="text-center fadeEl simplifying-heading">
+                    <span class="fw-400">SIMPLIFYING</span> SUPPLY CHAINS</h2>
+                <p class="text-center fw-400 secondary-clr simplifying-heading-para">We offer scalable and tech-driven
                     warehousing and distribution for B2B and retail through a connected
                     network of fulfillment centers and third-party logistics providers
                 </p>
                 <div class="d-flex align-items-center justify-content-center">
-                    <button class="button login">Learn More</button>
+                    <button class="button login fadeEl">Learn More</button>
                 </div>
             </div>
             <div class="row my-3">
@@ -427,9 +333,9 @@
         </div>
         <div class="clients-inner">
             <div class="text-content">
-                <h2 class="text-center simplifying-heading" id="simplifyingHeading"><span class="font-thin2">OUR</span>
+                <h2 class="text-center simplifying-heading fadeEl" ><span class="font-thin2">OUR</span>
                     CLIENTS</h2>
-                <p class="secondary-clr text-center" id="simplifyingText">Book your own warehouse space by connecting
+                <p class="secondary-clr text-center fadeEl">Book your own warehouse space by connecting
                     with our
                     network.</p>
             </div>
@@ -522,72 +428,8 @@
 </body>
 <script src="js/oware.js"></script>
 <script src="vendor/bootstrap.bundle.min.js"></script>
-<script>
-    let callBtn = document.getElementById('phoneCall')
-    let phoneLink = document.getElementById('phoneNumber');
-    callBtn.addEventListener('click', () => {
-        phoneLink.style.display = "inline-block"
-    });
-    callBtn.addEventListener('blur', () => {
-        phoneLink.style.display = "none";
-    })
-    function toggleImageOnCard(target, address1, address2) {
-        target.addEventListener('mouseover', () => {
-            let image = target.children[0];
-            image.removeAttribute('src');
-            image.setAttribute('src', address1)
-        })
-        target.addEventListener('mouseleave', () => {
-            let image = target.children[0];
-            image.removeAttribute('src');
-            image.setAttribute('src', address2)
-        })
-    }
-    let initAdd = 'assets/pitchlogos/';
-    let unilever = document.querySelector('#unilever');
-    toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
 
-    let animatedLogoText = document.querySelector('.logoAnimated');
-    let headerText = document.querySelector('#header-text');
-    let video = document.querySelector('.video-container');
-    let neonNet = document.querySelector('#neonNet');
-    let logo = document.querySelector('.logo');
-    // let initialOpacity = animatedLogoText.style.opacity;
-    let scrollPos = window.pageYOffset;
-    let prevScrollPos = 0;
-    let isTextInvisible = false;
+<script src="./js/yt.js"></script>
 
-    // Add a scroll event listener
-    window.addEventListener('scroll', function (event) {
-        prevScrollPos = scrollPos;
-        scrollPos = window.pageYOffset;
-
-        // Check if the user is scrolling down and the text has not yet become invisible
-        if (scrollPos > prevScrollPos && !isTextInvisible) {
-            animatedLogoText.style.opacity = 0;
-            // animatedLogoText.style.width = 0;
-            // animatedLogoText.style.height = 0;
-            logo.style.opacity = 1;
-            headerText.style.opacity = 1;
-            video.style.width = '60%';
-            video.style.opacity = 1;
-            neonNet.style.width = '55%';
-            neonNet.style.opacity = 1;
-            neonNet.style.marginTop = 0;
-            isTextInvisible = true;
-            window.scrollTo(0, 0)
-        }
-    });
-    let circles = document.querySelectorAll(".circle");
-    circles.forEach(e => e.addEventListener("mouseover", e => {
-        let t = e.target.getAttribute("data-city");
-        document.getElementById(t).style.opacity = 1;
-    }))
-    circles.forEach(e => e.addEventListener("mouseleave", e => {
-        let t = e.target.getAttribute("data-city");
-        document.getElementById(t).style.opacity = 0
-    }));
-
-</script>
 
 </html>

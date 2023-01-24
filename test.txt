@@ -644,3 +644,43 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section> -->
+
+
+        <!-- <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between flex-row" style="width: 100%">
+                    <a class="navbar-brand ml-lg-2" href="/"><img class="logo" src="assets/logodark.png"
+                            alt="Oware"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse d-flex justify-content-between navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link secondary-clr active mx-3" aria-current="page" href="#">COMPANY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-clr mx-3" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-clr mx-3" href="#">CULTURE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-clr mx-3" href="#">NEWSROOM</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button id="phoneCall" class="callIcon d-flex align-items-center justify-content-center">
+                                <img src="./assets/call.png" alt="Call Icon" />
+                                <a class="mx-2" id="phoneNumber" href="tel:+923220936174">+92 322 0936174</a>
+                            </button>
+                            <button class="button login">LOGIN</button>
+                            <button class="mx-3 button get-started" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" type="submit">GET STARTED</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
