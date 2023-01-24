@@ -98,11 +98,81 @@ window.addEventListener('scroll', function (event) {
 //   document.getElementById(t).style.opacity = 0
 // }));
 
-let videoModal = document.getElementById("videoModal");
-let ytPlayer = document.getElementById('yt-player')
-videoModal.addEventListener('hidden.bs.modal',  () => {
-  ytPlayer.removeAttribute('src')
-});
-videoModal.addEventListener('show.bs.modal', () => {
-  if(!ytPlayer.getAttribute('src')) ytPlayer.setAttribute('src', 'https://www.youtube.com/embed/nQQJpmiV4kU');
-})
+}
+const mobilePoster = "assets/map-potrait-placeholder.jpg";
+const desktopPoster = "assets/poster.png";
+
+renderVideo(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId, mobilePoster, desktopPoster);
+renderVideo(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId, "assets/client-back.png", "assets/client-back.png");
+renderVideoOnResize(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId);
+renderVideoOnResize(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId);
+
+let clientListTop = document.querySelector('.client-list-top');
+let clientListBottom = document.querySelector('.client-list-bottom');
+function translateX(elem, count) {
+  elem.style.transform = `translateX(${count}px)`;
+}
+let countTop = 0;
+let countBottom = 0;
+let width = -1 * window.innerWidth;
+if(width > -450){
+  width += 343;
+}
+if(width > -1366){
+ let addWidth = width - 1366;
+ width-=addWidth;
+}
+
+const animateTop = (elem) => {
+  setInterval(function () {
+    countTop = countTop - 0.4;
+    if (countTop < (width - 1465)) {
+      countTop = 0;
+      translateX(elem, countTop)
+    }
+    translateX(elem, countTop);
+  }, 1)
+
+}
+const animateBottom = (elem) => {
+  setInterval(function () {
+    countBottom = countBottom - 0.5;
+    if (countBottom < (width - 1465)) {
+      countBottom = 0;
+      translateX(elem, countBottom)
+    }
+    translateX(elem, countBottom);
+  }, 1)
+}
+// animateTop(clientListTop)
+// animateBottom(clientListBottom)
+
+// let bazar = document.querySelector('#bazar');
+// let bazar2 = document.querySelector('#bazar2');
+// let kravemart = document.querySelector('#kravemart');
+// let unilever = document.querySelector('#unilever');
+// let iffco = document.querySelector('#iffco');
+// let iffco2 = document.querySelector('#iffco2');
+// let rholab = document.querySelector('#rholab');
+
+// function toggleImageOnCard(target, address1, address2) {
+//     target.addEventListener('mouseover', () => {
+//       let image = target.children[0];
+//       image.removeAttribute('src');
+//       image.setAttribute('src', address1)
+//   })
+//     target.addEventListener('mouseleave', () => {
+//       let image = target.children[0];
+//       image.removeAttribute('src');
+//       image.setAttribute('src', address2)
+//     })
+// }
+// let initAdd = 'assets/pitchlogos/'
+// toggleImageOnCard(bazar, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
+// toggleImageOnCard(bazar2, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
+// toggleImageOnCard(kravemart, initAdd + 'kravemartwhite.png', initAdd + 'Kravemart-grey.png');
+// toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
+// toggleImageOnCard(iffco, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
+// toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
+// toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
+
