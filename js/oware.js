@@ -98,51 +98,51 @@ window.addEventListener('scroll', function (event) {
 //   document.getElementById(t).style.opacity = 0
 // }));
 
-const mobilePoster = "assets/map-potrait-placeholder.jpg";
-const desktopPoster = "assets/poster.png";
+// const mobilePoster = "assets/map-potrait-placeholder.jpg";
+// const desktopPoster = "assets/poster.png";
 
-renderVideo(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId, mobilePoster, desktopPoster);
-renderVideo(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId, "assets/client-back.png", "assets/client-back.png");
-renderVideoOnResize(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId);
-renderVideoOnResize(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId);
+// renderVideo(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId, mobilePoster, desktopPoster);
+// renderVideo(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId, "assets/client-back.png", "assets/client-back.png");
+// renderVideoOnResize(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId);
+// renderVideoOnResize(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId);
 
-let clientListTop = document.querySelector('.client-list-top');
-let clientListBottom = document.querySelector('.client-list-bottom');
-function translateX(elem, count) {
-  elem.style.transform = `translateX(${count}px)`;
-}
-let countTop = 0;
-let countBottom = 0;
-let width = -1 * window.innerWidth;
-if(width > -450){
-  width += 343;
-}
-if(width > -1366){
- let addWidth = width - 1366;
- width-=addWidth;
-}
+// let clientListTop = document.querySelector('.client-list-top');
+// let clientListBottom = document.querySelector('.client-list-bottom');
+// function translateX(elem, count) {
+//   elem.style.transform = `translateX(${count}px)`;
+// }
+// let countTop = 0;
+// let countBottom = 0;
+// let width = -1 * window.innerWidth;
+// if(width > -450){
+//   width += 343;
+// }
+// if(width > -1366){
+//  let addWidth = width - 1366;
+//  width-=addWidth;
+// }
 
-const animateTop = (elem) => {
-  setInterval(function () {
-    countTop = countTop - 0.4;
-    if (countTop < (width - 1465)) {
-      countTop = 0;
-      translateX(elem, countTop)
-    }
-    translateX(elem, countTop);
-  }, 1)
+// const animateTop = (elem) => {
+//   setInterval(function () {
+//     countTop = countTop - 0.4;
+//     if (countTop < (width - 1465)) {
+//       countTop = 0;
+//       translateX(elem, countTop)
+//     }
+//     translateX(elem, countTop);
+//   }, 1)
 
-}
-const animateBottom = (elem) => {
-  setInterval(function () {
-    countBottom = countBottom - 0.5;
-    if (countBottom < (width - 1465)) {
-      countBottom = 0;
-      translateX(elem, countBottom)
-    }
-    translateX(elem, countBottom);
-  }, 1)
-}
+// }
+// const animateBottom = (elem) => {
+//   setInterval(function () {
+//     countBottom = countBottom - 0.5;
+//     if (countBottom < (width - 1465)) {
+//       countBottom = 0;
+//       translateX(elem, countBottom)
+//     }
+//     translateX(elem, countBottom);
+//   }, 1)
+// }
 // animateTop(clientListTop)
 // animateBottom(clientListBottom)
 
@@ -175,3 +175,16 @@ const animateBottom = (elem) => {
 // toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
 // toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
 
+async function postData () {
+  const response = await fetch("https://api.oware.co/api/en/customer-onboardings", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+      'accept': 'application/json',
+      'cookie': 'ajs_anonymous_id=%2232b321e8-218c-4a5a-a4f1-e21645b3a7d0%22;_ga=GA1.1.996003942.1657872750;__hstc=140389612.9d1db8b3e9284cd675a791a82a821d56.1669378798188.1669378798188.1669378798188.1;jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkB5b3BtYWlsLmNvbSIsImlhdCI6MTY3MzQzODIzMCwiZXhwIjoxNzU5ODM4MjMwfQ.O5HDR0UChiCPfcDdw2-3llNVFUmc5xFKLtA7Bvy0qac'
+    }
+  })
+  const responseData = await response.json();
+  console.log(responseData)
+}
