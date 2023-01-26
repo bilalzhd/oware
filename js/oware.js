@@ -1,36 +1,14 @@
-// let slideObserver = new IntersectionObserver(e => {
-//   e.forEach(e => {
-//     e.isIntersecting ? e.target.classList.add("animateShow") : e.target.classList.remove("animateShow")
-//   })
-// })
-// let arrowObserver = new IntersectionObserver(e => {
-//   e.forEach(e => {
-//     if (e.isIntersecting) {
-//       setTimeout(() => {
-//         e.target.classList.add("show")
-//       }, 400)
-//     } else {
-//       e.target.classList.remove("show")
-//     }
-//   })
-// })
-// let cardObserver = new IntersectionObserver(e => {
-//   e.forEach(e => { e.isIntersecting ? e.target.classList.add("showCards") : e.target.classList.remove("showCards") })
-// });
-
-
 // animate on scroll with Intersection Observer
 const observer = new IntersectionObserver((elements) => {
-  elements.forEach(el => { 
-    el.isIntersecting ? el.target.classList.add("shown") : el.target.classList.remove("shown") 
+  elements.forEach(el => {
+    el.isIntersecting ? el.target.classList.add("shown") : el.target.classList.remove("shown")
   })
 })
 
 let fadeElements = document.querySelectorAll('.fadeEl');
 fadeElements.forEach(e => observer.observe(e))
 
-// arrow.forEach(e => arrowObserver.observe(e)), cards.forEach(e => [cardObserver.observe(e)]);
-
+// interactivity on the phone icon on the header
 let callBtn = document.getElementById('phoneCall')
 let phoneLink = document.getElementById('phoneNumber');
 callBtn.addEventListener('click', () => {
@@ -41,22 +19,8 @@ callBtn.addEventListener('blur', () => {
   phoneLink.style.opacity = 0;
   phoneLink.style.width = 0;
 })
-function toggleImageOnCard(target, address1, address2) {
-  target.addEventListener('mouseover', () => {
-    let image = target.children[0];
-    image.removeAttribute('src');
-    image.setAttribute('src', address1)
-  })
-  target.addEventListener('mouseleave', () => {
-    let image = target.children[0];
-    image.removeAttribute('src');
-    image.setAttribute('src', address2)
-  })
-}
-let initAdd = 'assets/pitchlogos/';
-let unilever = document.querySelector('#unilever');
-toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
 
+// MAIN FRONT ANIMATION
 let animatedLogoText = document.querySelector('.logoAnimated');
 let headerText = document.querySelector('#header-text');
 let video = document.querySelector('.video-container');
@@ -79,15 +43,17 @@ window.addEventListener('scroll', function (event) {
     // animatedLogoText.style.height = 0;
     logo.style.opacity = 1;
     headerText.style.opacity = 1;
-    video.style.width = '60%';
+    video.style.width = '50%';
     video.style.opacity = 1;
-    neonNet.style.width = '55%';
+    neonNet.style.width = '45%';
     neonNet.style.opacity = 1;
     neonNet.style.marginTop = 0;
     isTextInvisible = true;
     window.scrollTo(0, 0)
   }
 });
+
+// FUNCTIONING MAP IMAGE TO SHOW CARD ON HOVER
 // let circles = document.querySelectorAll(".circle");
 // circles.forEach(e => e.addEventListener("mouseover", e => {
 //   let t = e.target.getAttribute("data-city");
@@ -98,93 +64,72 @@ window.addEventListener('scroll', function (event) {
 //   document.getElementById(t).style.opacity = 0
 // }));
 
-// const mobilePoster = "assets/map-potrait-placeholder.jpg";
-// const desktopPoster = "assets/poster.png";
+// SUBMITTING THE FORM DATA TO THE ONEXUS API
+const inputs = document.querySelectorAll("input[type='text']:not([placeholder='Designation'])");
 
-// renderVideo(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId, mobilePoster, desktopPoster);
-// renderVideo(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId, "assets/client-back.png", "assets/client-back.png");
-// renderVideoOnResize(clientVid, "assets/Video.mp4", "assets/client-back-potrait.mp4", backId);
-// renderVideoOnResize(vid, "assets/map-without-border.mp4", "assets/PakMap_Flat-Portrait 4.mp4", mapId);
-
-// let clientListTop = document.querySelector('.client-list-top');
-// let clientListBottom = document.querySelector('.client-list-bottom');
-// function translateX(elem, count) {
-//   elem.style.transform = `translateX(${count}px)`;
-// }
-// let countTop = 0;
-// let countBottom = 0;
-// let width = -1 * window.innerWidth;
-// if(width > -450){
-//   width += 343;
-// }
-// if(width > -1366){
-//  let addWidth = width - 1366;
-//  width-=addWidth;
-// }
-
-// const animateTop = (elem) => {
-//   setInterval(function () {
-//     countTop = countTop - 0.4;
-//     if (countTop < (width - 1465)) {
-//       countTop = 0;
-//       translateX(elem, countTop)
-//     }
-//     translateX(elem, countTop);
-//   }, 1)
-
-// }
-// const animateBottom = (elem) => {
-//   setInterval(function () {
-//     countBottom = countBottom - 0.5;
-//     if (countBottom < (width - 1465)) {
-//       countBottom = 0;
-//       translateX(elem, countBottom)
-//     }
-//     translateX(elem, countBottom);
-//   }, 1)
-// }
-// animateTop(clientListTop)
-// animateBottom(clientListBottom)
-
-// let bazar = document.querySelector('#bazar');
-// let bazar2 = document.querySelector('#bazar2');
-// let kravemart = document.querySelector('#kravemart');
-// let unilever = document.querySelector('#unilever');
-// let iffco = document.querySelector('#iffco');
-// let iffco2 = document.querySelector('#iffco2');
-// let rholab = document.querySelector('#rholab');
-
-// function toggleImageOnCard(target, address1, address2) {
-//     target.addEventListener('mouseover', () => {
-//       let image = target.children[0];
-//       image.removeAttribute('src');
-//       image.setAttribute('src', address1)
-//   })
-//     target.addEventListener('mouseleave', () => {
-//       let image = target.children[0];
-//       image.removeAttribute('src');
-//       image.setAttribute('src', address2)
-//     })
-// }
-// let initAdd = 'assets/pitchlogos/'
-// toggleImageOnCard(bazar, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
-// toggleImageOnCard(bazar2, initAdd + 'bazar.png', initAdd + 'bazargrey.png');
-// toggleImageOnCard(kravemart, initAdd + 'kravemartwhite.png', initAdd + 'Kravemart-grey.png');
-// toggleImageOnCard(unilever, initAdd + 'Unilever.png', initAdd + 'Unilever-grey.png');
-// toggleImageOnCard(iffco, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
-// toggleImageOnCard(iffco2, initAdd + 'Iffco-white.png', initAdd + 'Iffco-Grey.png');
-// toggleImageOnCard(rholab, initAdd + 'rholab.png', initAdd + 'rahlab-grey.png');
-
-async function postData () {
-  const response = await fetch("https://api.oware.co/api/en/customer-onboardings", {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json',
-      'accept': 'application/json',
-      'cookie': 'ajs_anonymous_id=%2232b321e8-218c-4a5a-a4f1-e21645b3a7d0%22;_ga=GA1.1.996003942.1657872750;__hstc=140389612.9d1db8b3e9284cd675a791a82a821d56.1669378798188.1669378798188.1669378798188.1;jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkB5b3BtYWlsLmNvbSIsImlhdCI6MTY3MzQzODIzMCwiZXhwIjoxNzU5ODM4MjMwfQ.O5HDR0UChiCPfcDdw2-3llNVFUmc5xFKLtA7Bvy0qac'
+// Validating the data first
+function validatingData() {
+  inputs.forEach((input) => {
+    const invalidEl = document.querySelector("#" + input.id).parentElement.querySelector('.invalid-feedback');
+    if (input.value.trim().length === 0) {
+      input.focus();
+      input.classList.add("error-input")
+      invalidEl.style.display = "block";
+      return false;
+    } else {
+      invalidEl.style.display = "none";
+      input.classList.remove("error-input")
     }
   })
-  const responseData = await response.json();
-  console.log(responseData)
+  const firstname = document.getElementById('firstname').value
+  const lastname = document.getElementById('lastname').value
+  const email = document.getElementById('email').value
+  const phone = document.getElementById('phone').value
+  const companyName = document.getElementById('companyName').value
+  const designation = document.getElementById('designation').value
+  // const message = document.getElementById('message').value
+  // let signupForOnexus = document.getElementById('signupForOnexus')
+  // if(signupForOnexus.checked) {
+  //   signupForOnexus = signupForOnexus.value
+  // } else {
+  //   signupForOnexus = false;
+  // }
+  const formData = {
+    firstname,
+    lastname,
+    email,
+    phone,
+    company_name: companyName,
+    designation,
+    // signupForOnexus
+  }
+  return formData;
 }
+
+// function to send the request
+async function postData(event) {
+  event.preventDefault();
+  const formData = validatingData();
+  if (!!formData) {
+    const response = await fetch("https://api.oware.co/api/en/customer-onboardings", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json',
+        'accept': 'application/json',
+        'cookie': 'ajs_anonymous_id=%2232b321e8-218c-4a5a-a4f1-e21645b3a7d0%22;_ga=GA1.1.996003942.1657872750;__hstc=140389612.9d1db8b3e9284cd675a791a82a821d56.1669378798188.1669378798188.1669378798188.1;jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkB5b3BtYWlsLmNvbSIsImlhdCI6MTY3MzQzODIzMCwiZXhwIjoxNzU5ODM4MjMwfQ.O5HDR0UChiCPfcDdw2-3llNVFUmc5xFKLtA7Bvy0qac'
+      }
+    })
+    const responseData = await response.json();
+    console.log(responseData)
+  }
+}
+// adding the event to the form onsubmit
+document.getElementById('signupForm').addEventListener('submit', postData);
+let unilever = document.getElementById('unilever');
+unilever.addEventListener('mouseover', () => {
+  unilever.firstElementChild.src = "./assets/pitchlogos/Unilever-white.png"
+})
+unilever.addEventListener('mouseout', () => {
+  unilever.firstElementChild.src = "./assets/pitchlogos/Unilever-grey2.png"
+})

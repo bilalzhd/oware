@@ -29,8 +29,8 @@ a {
     font-weight: 300;
 }
 
-section {
-    margin: 3rem auto;
+section#main-header {
+    margin-top: 3rem;
 }
 
 section#footer,
@@ -61,16 +61,12 @@ h2 {
     font-size: 35px;
 }
 
-#main-header {
-    margin-bottom: 6rem;
-}
-
 .fw-700 {
     font-weight: bold;
 }
 
 .video-container {
-    width: 50%;
+    width: 40%;
     height: 50%;
     opacity: 0.5;
     transition: all 0.8s;
@@ -267,10 +263,10 @@ h2 {
     left: 68%;
 }
 .error-input {
-    border: 1px solid red !important;
+    border: 1px solid #DD8070 !important;
 }
 .error-input:focus {
-    border-color: red !important;
+    border-color: #DD8070 !important;
     box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2) !important;
 }
 .mt-lg-3 {
@@ -328,22 +324,6 @@ h2 {
 .font-thin2 {
     font-weight: 200 !important;
 }
-
-/* .button {
-    background: var(--secondary-clr);
-    color: #fff;
-    border-radius: 4px;
-    width: 236px;
-    height: 42px;
-    margin-top: 0.5rem;
-    transition: 0.7s;
-    border-color: var(--secondary-clr);
-} */
-.button:hover {
-    background: var(--main-clr);
-    border-color: var(--main-clr);
-}
-
 .main-header-padding {
     padding: 10rem 6rem;
 }
@@ -422,13 +402,15 @@ h2 {
 .liner {
     width: 100%;
 }
-
 .map-text {
-  font-size: 2.5rem;
-  position: absolute;
-  width: 35%;
+    position: absolute;
+  width: 40%;
   left: 1%;
-  top: 7%;
+  top: 0;
+}
+.map-text h2{
+  font-size: 2.5rem;
+  
   font-weight: 700;
 }
 
@@ -448,6 +430,9 @@ h2 {
     #main-header {
         /* height: 100vh; */
         margin-top: 6rem;
+    }
+    .modal-content {
+        margin-top: 22% !important;
     }
     .mockupImages {
         margin: 25px;
@@ -569,8 +554,12 @@ h2 {
         line-height: 50px !important;
     }
 
-    .map-text {
+    .map-text h2{
         font-size: 16px;
+        left: 10%;
+    }
+    .map-text p{
+        font-size: 13px;
         left: 10%;
     }
 
@@ -948,20 +937,10 @@ input[type="checkbox"]:focus {
 }
 
 #supplychains {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     background-color: #ECF9FF;
 }
-
-/* #supplychains p {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: center;
-    margin: 1rem auto;
-} */
 #warehousing-card-text {
     opacity: 0;
 }
@@ -1473,15 +1452,25 @@ ul.nav.flex-column {
 }
 
 .get-started {
-    background-color: #0E2048;
+    background: #0E2048 !important;
     color: #fff;
+    transition: all 0.4s;
 }
-
+.get-started:hover {
+    background: linear-gradient(90deg, #000F31, #032164);
+    color: var(--main-clr);
+}
 .login {
     background-color: #fff;
     border-color: #46BBEB;
+    border-style: solid;
     color: #0E2048;
-    border-width: 1.7px;
+    border-width: 2px;
+    transition: all 0.4s;
+}
+.login:hover {
+    color: #fff;
+    background-color: var(--main-clr);
 }
 
 .callIcon {
@@ -1622,4 +1611,7 @@ ul.nav.flex-column {
 .logoImageSm {
     width: 38px;
     height: 38px;
+}
+.opac-40 {
+    opacity: 0.4;
 }
