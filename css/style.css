@@ -37,12 +37,15 @@ section#footer,
 section#navbar {
     margin: 0;
 }
+
 #navbar {
     padding-top: 1rem;
 }
+
 .navbar-nav.me-auto {
     gap: 25px;
 }
+
 .main-clr {
     color: var(--main-clr);
 }
@@ -71,8 +74,9 @@ h2 {
     opacity: 0.5;
     transition: all 0.8s;
 }
+
 #neonNet {
-    width: 40%; 
+    width: 40%;
     opacity: 0.5;
     transition: all 0.8s;
     margin-top: 5rem;
@@ -99,6 +103,7 @@ h2 {
     left: 125px;
     width: 40%;
 }
+
 .greywaves {
     position: absolute;
     bottom: 0;
@@ -184,6 +189,7 @@ h2 {
     bottom: 8%;
     left: 51.5%;
 }
+
 .circle3 {
     bottom: 11%;
     left: 56%;
@@ -208,6 +214,7 @@ h2 {
     bottom: 48%;
     left: 67%;
 }
+
 .circle8 {
     bottom: 53%;
     left: 73%;
@@ -217,34 +224,42 @@ h2 {
     bottom: 58%;
     left: 73%;
 }
+
 .circle10 {
     bottom: 61%;
     left: 74%;
 }
+
 .circle11 {
     bottom: 40%;
     left: 47%;
 }
+
 .circle12 {
     bottom: 72%;
     left: 64%;
 }
+
 .circle13 {
     bottom: 68%;
     left: 70%;
 }
+
 #karachi {
     bottom: 11%;
     left: 44%;
 }
+
 #hyderabad {
     bottom: 15%;
     left: 47%;
 }
+
 #mirpurkhas {
     bottom: 17%;
     left: 49%;
 }
+
 #sukkur {
     bottom: 26%;
     left: 49%;
@@ -254,21 +269,26 @@ h2 {
     bottom: 53%;
     left: 61%;
 }
+
 #gujranwala {
     bottom: 62%;
     left: 66%;
 }
+
 #sialkot {
     bottom: 67%;
     left: 68%;
 }
+
 .error-input {
     border: 1px solid #DD8070 !important;
 }
+
 .error-input:focus {
     border-color: #DD8070 !important;
     box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.2) !important;
 }
+
 .mt-lg-3 {
     margin-top: 1rem !important;
     margin-bottom: 3rem;
@@ -303,6 +323,7 @@ h2 {
     bottom: 47%;
     left: 42.5%;
 }
+
 #bahawalpur {
     bottom: 42%;
     left: 60%;
@@ -324,6 +345,7 @@ h2 {
 .font-thin2 {
     font-weight: 200 !important;
 }
+
 .main-header-padding {
     padding: 10rem 6rem;
 }
@@ -402,85 +424,106 @@ h2 {
 .liner {
     width: 100%;
 }
+
 .map-text {
     position: absolute;
-  width: 40%;
-  left: 1%;
-  top: 0;
+    width: 40%;
+    left: 1%;
+    top: 0;
 }
-.map-text h2{
-  font-size: 2.5rem;
-  
-  font-weight: 700;
+
+.map-text h2 {
+    font-size: 2.5rem;
+
+    font-weight: 700;
 }
 
 .my-lg-3 {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 .navbar-end-login-get-started {
     gap: 10px;
     flex-direction: row;
     align-items: center;
 }
+
 .simplifying-heading-para {
     font-size: 20px;
 }
+
 @media screen and (max-width: 767px) {
     #main-header {
         /* height: 100vh; */
         margin-top: 6rem;
     }
+
     .modal-content {
         margin-top: 22% !important;
     }
+
     .mockupImages {
         margin: 25px;
-     }
-     .simplifying-heading-para {
+    }
+
+    .simplifying-heading-para {
         font-size: 16px;
-     }
+    }
+
     .abs {
         height: auto
     }
+
     .client-card img {
         width: 100px;
     }
+
     .client-card {
         min-width: 120px !important;
         max-height: 90px;
     }
+
     #mockup {
         padding: 0 !important;
     }
+
     .fw-400.secondary-clr {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .mockup2 {
         position: relative !important;
     }
+
     .navbar-nav.me-auto {
         gap: 0;
     }
+
     .navbar-end-login-get-started {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .mapImage {
         width: 100%;
     }
-    .header-text-a{
+
+    .header-text-a {
         width: 100% !important;
     }
+
     .gain-access {
         font-size: 1.4rem
     }
+
     .logoAnimated {
         font-size: 102px !important;
         z-index: 10 !important;
         top: -4% !important;
     }
+
     .md-col-reverse {
         flex-direction: column-reverse !important;
     }
@@ -554,11 +597,12 @@ h2 {
         line-height: 50px !important;
     }
 
-    .map-text h2{
+    .map-text h2 {
         font-size: 16px;
         left: 10%;
     }
-    .map-text p{
+
+    .map-text p {
         font-size: 13px;
         left: 10%;
     }
@@ -628,15 +672,17 @@ h2 {
         max-width: 180px !important;
         max-height: 180px !important;
     }
+
     .greyImg {
         min-width: 120px !important;
         max-height: 90px;
     }
+
     .greyImg img {
         width: 100px;
         height: 80px;
     }
-    
+
 
     .invert {
         min-width: 200px !important;
@@ -817,6 +863,7 @@ h2 {
     text-align: center;
     color: var(--main-clr);
 }
+
 .fadeEl {
     opacity: 0;
     transition: all 1s;
@@ -877,9 +924,11 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
 .modal-footer:not(.video-modal-footer) {
     margin-bottom: 1rem;
 }
+
 input[type="checkbox"] {
     outline: 1px solid var(--secondary-clr);
 }
@@ -891,6 +940,7 @@ input[type="checkbox"]:focus {
 .shown {
     opacity: 1 !important;
 }
+
 .modal-header {
     border-bottom: none !important;
     justify-content: center !important;
@@ -935,6 +985,7 @@ input[type="checkbox"]:focus {
     opacity: 1 !important;
 
 }
+
 .fixedNavbar {
     position: fixed;
     width: 100%;
@@ -944,11 +995,46 @@ input[type="checkbox"]:focus {
     z-index: 100;
     padding: 20px 0;
 }
+
+#submitSignup:disabled {
+    background-color: lightgrey !important;
+    color: grey;
+    cursor: not-allowed;
+}
+#submitSignup {
+    position: relative;
+}
+.loadingButton {
+    position: relative;
+}
+.loadingButton::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    border-top-color: #fff;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 #supplychains {
     padding-top: 3rem;
     padding-bottom: 2rem;
     background-color: #ECF9FF;
 }
+
 #warehousing-card-text {
     opacity: 0;
 }
@@ -1256,10 +1342,12 @@ ul.nav.flex-column {
     opacity: 0.1;
     transition: all 1s ease-in;
 }
+
 .circleSm {
     width: 45px;
     height: 45px;
 }
+
 @media screen and (min-width: 400px) and (max-width: 420px) {
     .circleSm {
         width: 20px;
@@ -1464,10 +1552,12 @@ ul.nav.flex-column {
     color: #fff;
     transition: all 0.4s;
 }
+
 .get-started:hover {
     background: linear-gradient(90deg, #000F31, #032164);
     color: var(--main-clr);
 }
+
 .login {
     background-color: #fff;
     border-color: #46BBEB;
@@ -1476,6 +1566,7 @@ ul.nav.flex-column {
     border-width: 2px;
     transition: all 0.4s;
 }
+
 .login:hover {
     color: #fff;
     background-color: var(--main-clr);
@@ -1612,14 +1703,17 @@ ul.nav.flex-column {
     opacity: 1;
     transition: all 0.8s ease-in-out;
 }
+
 #header-text {
     opacity: 0;
     transition: all 1s ease-in;
 }
+
 .logoImageSm {
     width: 38px;
     height: 38px;
 }
+
 .opac-40 {
     opacity: 0.4;
 }

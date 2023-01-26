@@ -66,51 +66,72 @@ window.addEventListener('scroll', function (event) {
 
 // SUBMITTING THE FORM DATA TO THE ONEXUS API
 const inputs = document.querySelectorAll("input[type='text']:not([placeholder='Designation'])");
+const email = document.querySelector('input[type="email"]')
 
 // Validating the data first
 function validatingData() {
+  let isValid = false;
+  if (email === "") {
+    email.reportValidity();
+  }
   inputs.forEach((input) => {
     const invalidEl = document.querySelector("#" + input.id).parentElement.querySelector('.invalid-feedback');
     if (input.value.trim().length === 0) {
       input.focus();
       input.classList.add("error-input")
       invalidEl.style.display = "block";
-      return false;
+      isValid = false;
     } else {
       invalidEl.style.display = "none";
       input.classList.remove("error-input")
+      isValid= true;
     }
   })
-  const firstname = document.getElementById('firstname').value
-  const lastname = document.getElementById('lastname').value
-  const email = document.getElementById('email').value
-  const phone = document.getElementById('phone').value
-  const companyName = document.getElementById('companyName').value
-  const designation = document.getElementById('designation').value
-  // const message = document.getElementById('message').value
-  // let signupForOnexus = document.getElementById('signupForOnexus')
-  // if(signupForOnexus.checked) {
-  //   signupForOnexus = signupForOnexus.value
-  // } else {
-  //   signupForOnexus = false;
-  // }
-  const formData = {
-    firstname,
-    lastname,
-    email,
-    phone,
-    company_name: companyName,
-    designation,
-    // signupForOnexus
-  }
-  return formData;
-}
+  return isValid;
 
+}
+const getFormData = () => {
+  if (validatingData()) {
+    const firstname = document.getElementById('firstname').value
+    const lastname = document.getElementById('lastname').value
+    const emailValue = document.getElementById('email').value
+    const phone = document.getElementById('phone').value
+    const companyName = document.getElementById('companyName').value
+    const designation = document.getElementById('designation').value
+    // const message = document.getElementById('message').value
+    // let signupForOnexus = document.getElementById('signupForOnexus')
+    // if(signupForOnexus.checked) {
+    //   signupForOnexus = signupForOnexus.value
+    // } else {
+    //   signupForOnexus = false;
+    // }
+    const formData = {
+      firstname,
+      lastname,
+      email: emailValue,
+      phone,
+      company_name: companyName,
+      designation,
+      // signupForOnexus
+    }
+    return formData;
+  } else {
+    return false;
+  }
+}
+let sigunupButton = document.getElementById('submitSignup');
+let alertSignup = document.getElementById('alertSignup');
+let signupModal = document.getElementById('signupModal')
+const confirmationModalButton = document.getElementById('confirmationModalButton')
 // function to send the request
 async function postData(event) {
   event.preventDefault();
-  const formData = validatingData();
-  if (!!formData) {
+
+  const formData = getFormData();
+  if (formData) {
+    sigunupButton.classList.remove("get-started")
+    sigunupButton.innerText = "";
+    sigunupButton.classList.add("loadingButton")
     const response = await fetch("https://api.oware.co/api/en/customer-onboardings", {
       method: "POST",
       body: JSON.stringify(formData),
@@ -120,8 +141,19 @@ async function postData(event) {
         'cookie': 'ajs_anonymous_id=%2232b321e8-218c-4a5a-a4f1-e21645b3a7d0%22;_ga=GA1.1.996003942.1657872750;__hstc=140389612.9d1db8b3e9284cd675a791a82a821d56.1669378798188.1669378798188.1669378798188.1;jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkB5b3BtYWlsLmNvbSIsImlhdCI6MTY3MzQzODIzMCwiZXhwIjoxNzU5ODM4MjMwfQ.O5HDR0UChiCPfcDdw2-3llNVFUmc5xFKLtA7Bvy0qac'
       }
     })
+
     const responseData = await response.json();
-    console.log(responseData)
+    sigunupButton.classList.add("get-started")
+    sigunupButton.innerText = "Submit";
+    sigunupButton.classList.remove("loadingButton")    
+    if (!responseData.error) {
+      signupModal.style.display = "none"
+      confirmationModalButton.click();
+    } else {
+      alertSignup.classList.remove('d-none')
+      alertSignup.innerHTML = `<strong>Error! </strong>${responseData.error.errors[0].message.replace("CustomerOnboardings.", "")}`
+      alertSignup.classList.add('show')
+    }
   }
 }
 // adding the event to the form onsubmit
@@ -140,5 +172,5 @@ document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => 
   owareIframe.removeAttribute("src");
 })
 document.getElementById('videoModalButton').addEventListener('click', () => {
-  if(!owareIframe.getAttribute('src')) owareIframe.setAttribute("src", 'https://www.youtube.com/embed/nQQJpmiV4kU');
+  if (!owareIframe.getAttribute('src')) owareIframe.setAttribute("src", 'https://www.youtube.com/embed/nQQJpmiV4kU');
 })

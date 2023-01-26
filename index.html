@@ -46,23 +46,28 @@
                             <a id="phoneNumber">+92 322 0936174</a>
                         </button>
                         <a href="https://onexus.oware.co/login"><button class="button login">LOGIN</button></a>
-                        <button class="button get-started" data-bs-toggle="modal" data-bs-target="#exampleModal">GET
+                        <button class="button get-started" data-bs-toggle="modal" data-bs-target="#signupModal">GET
                             STARTED</button>
+                            <button class="button get-started" data-bs-toggle="modal" id="confirmationModalButton" data-bs-target="#confirmationModal" style="display: none;">Confirmation Modal</button>
                     </div>
                 </div>
             </div>
         </nav>
     </section>
+    
     <!-- MODAL -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 secondary-clr" id="exampleModalLabel">Get Started</h1>
+                    <h1 class="modal-title fs-5 secondary-clr" id="signupModalLabel">Get Started</h1>
                     <p class="secondary-clr">Fill out the form below to get access to on-demand warehousing and
                         visual data tracking with Oware’s network.</p>
                 </div>
+                <div class="alert alert-danger alert-dismissible fade d-none" id="alertSignup" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
                 <form id="signupForm">
                     <div class="modal-body">
                         <div class="row mb-4">
@@ -82,7 +87,7 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col">
-                                <input id="email" type="email" class="form-control" placeholder="Email Address"
+                                <input id="email" type="email" class="form-control" placeholder="Email Address*"
                                     aria-label="Email Address">
                             </div>
                             <div class="col">
@@ -95,7 +100,7 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col">
-                                <input id="companyName" type="text" class="form-control" placeholder="Company Name"
+                                <input id="companyName" type="text" class="form-control" placeholder="Company Name*"
                                     aria-label="Company Name">
                                     <div class="invalid-feedback">
                                         Please enter the company name.
@@ -120,12 +125,13 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="button get-started">Submit</button>
+                        <button id="submitSignup" type="submit" class="button get-started">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -133,6 +139,22 @@
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 secondary-clr">
+                        <img src="./assets/check_circle.png" alt="">
+                        <p class="mt-4" style="font-weight: 600 !important;">Request Received!</p>
+                    </h1>
+                    <p class="secondary-clr px-5">A confirmation message has been emailed to you. Someone from 
+                        our team will reach out soon!</p>
+                </div>
             </div>
         </div>
     </div>
