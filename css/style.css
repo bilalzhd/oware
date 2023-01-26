@@ -30,7 +30,7 @@ a {
 }
 
 section#main-header {
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 section#footer,
@@ -935,7 +935,15 @@ input[type="checkbox"]:focus {
     opacity: 1 !important;
 
 }
-
+.fixedNavbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+}
 #supplychains {
     padding-top: 3rem;
     padding-bottom: 2rem;

@@ -133,3 +133,12 @@ unilever.addEventListener('mouseover', () => {
 unilever.addEventListener('mouseout', () => {
   unilever.firstElementChild.src = "./assets/pitchlogos/Unilever-grey2.png"
 })
+
+// To pause the video when the video modal closes
+const owareIframe = document.getElementById('yt-player');
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => {
+  owareIframe.removeAttribute("src");
+})
+document.getElementById('videoModalButton').addEventListener('click', () => {
+  if(!owareIframe.getAttribute('src')) owareIframe.setAttribute("src", 'https://www.youtube.com/embed/nQQJpmiV4kU');
+})
