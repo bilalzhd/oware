@@ -138,6 +138,7 @@ async function postData(event) {
       headers: {
         'Content-Type': 'application/json',
         'accept': 'application/json'
+      }
     })
 
     const responseData = await response.json();
