@@ -137,8 +137,7 @@ async function postData(event) {
       body: JSON.stringify(formData),
       headers: {
         'Content-Type': 'application/json',
-        'accept': 'application/json',
-        'cookie': 'ajs_anonymous_id=%2232b321e8-218c-4a5a-a4f1-e21645b3a7d0%22;_ga=GA1.1.996003942.1657872750;__hstc=140389612.9d1db8b3e9284cd675a791a82a821d56.1669378798188.1669378798188.1669378798188.1;jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkB5b3BtYWlsLmNvbSIsImlhdCI6MTY3MzQzODIzMCwiZXhwIjoxNzU5ODM4MjMwfQ.O5HDR0UChiCPfcDdw2-3llNVFUmc5xFKLtA7Bvy0qac'
+        'accept': 'application/json'
       }
     })
 
