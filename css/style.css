@@ -316,7 +316,12 @@ h2 {
         width: 100%;
         padding-top: 1rem !important;
     }
-
+    .usp-text {
+        width: 65%;
+    }
+    .ml-lg-2 {
+        margin-left: 2%;
+    }
     .abs {
         height: 90vh;
     }
@@ -390,8 +395,8 @@ h2 {
     }
 
     .fw-400.secondary-clr:not(.map-text-para) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 7%;
+        padding-right: 7%;
     }
     .map-text { left: 5%}
     .mockup2 {
@@ -962,64 +967,18 @@ input[type="checkbox"] {
 .card-title {
     transition: all 0.4s !important;
 }
-@media screen and (min-width: 2460px) {
-    .circle0 {
-        bottom: 220px;
-        left: 860px;
-    }
-
-    #karachi {
-        left: 780px;
-        bottom: 290px;
+@media screen and (min-width: 1400px) {
+    .on-demand {
+        width: 85%;
     }
 }
-
-@media screen and (min-width: 1910px) {
-    .circle0 {
-        bottom: 180px;
-        left: 635px;
-    }
-    .circle2 {
-        bottom: 400px;
-        left: 630px;
-    }
-
-    .circle3 {
-        bottom: 393px;
-        left: 862px;
-    }
-
-    .circle5 {
-        bottom: 585px;
-        left: 1135px;
-    }
-
-    .circle6 {
-        bottom: 670px;
-        left: 1262px;
-    }
-
-    .circle7 {
-        bottom: 680px;
-        left: 1380px;
-    }
-
-    .circle8 {
-        bottom: 795px;
-        left: 1250px;
-    }
-
-    .circle9 {
-        bottom: 810px;
-        left: 1110px;
-    }
-
-    #karachi {
-        left: 570px;
-        bottom: 290px;
-    }
+.usp-text {
+    font-size: 18px;
+    line-height: 24.51px;
 }
-
+.usp__row {
+    margin-bottom: 11%;
+}
 ul.nav.flex-column {
     align-items: start;
 }
