@@ -1,1 +1,0 @@
-const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting?e.target.classList.add("shown"):e.target.classList.remove("shown")})});let fadeElements=document.querySelectorAll(".fadeEl");fadeElements.forEach(e=>observer.observe(e));

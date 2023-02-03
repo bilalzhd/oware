@@ -1,1 +1,0 @@
-const owareIframe=document.getElementById("yt-player");document.getElementById("videoModal").addEventListener("hidden.bs.modal",()=>{owareIframe.removeAttribute("src")}),document.getElementById("videoModalButton").addEventListener("click",()=>{owareIframe.getAttribute("src")||owareIframe.setAttribute("src","https://www.youtube.com/embed/nQQJpmiV4kU")});
