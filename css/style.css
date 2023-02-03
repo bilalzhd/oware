@@ -1003,8 +1003,10 @@ ul.nav.flex-column {
     .hidden {
         transition: none;
     }
-
     .animateHide {
+        transition: none;
+    }
+    .fadeEl {
         transition: none;
     }
 }
@@ -1029,142 +1031,9 @@ ul.nav.flex-column {
     width: 45px;
     height: 45px;
 }
-@media screen and (min-width: 400px) and (max-width: 420px) {
-    .circleSm {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background-color: #6AFFFF;
-        border-radius: 80%;
-        z-index: 10000;
-        opacity: 0;
-    }
-
-    .circle6 {
-        bottom: 223px;
-        left: 273px;
-    }
-
-    #islamabad {
-        bottom: 52%;
-        left: 52%;
-    }
-
-    #lahore {
-        bottom: 230px;
-        left: 210px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .circle6 {
-        bottom: 198px;
-        left: 240px;
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width: 800px) {
-    .circle0 {
-        bottom: 66px;
-        left: 259px;
-    }
-
-    #karachi {
-        bottom: 115px;
-        left: 235px;
-    }
-
-    .circle2 {
-        bottom: 165px;
-        left: 246px;
-    }
-
-    #multan {
-        bottom: 205px;
-        left: 212px;
-    }
-
-    .circle5 {
-        bottom: 264px;
-        left: 509px;
-    }
-
-    #lahore {
-        bottom: 293px;
-        left: 474px;
-    }
-
-    .circle6 {
-        bottom: 278px;
-        left: 551px;
-    }
-
-    #islamabad {
-        bottom: 308px;
-        left: 520px;
-    }
-}
 .mb-lg-3 {
     margin-bottom: 1rem;
     margin-top: 1rem;
-}
-
-@media screen and (min-width: 800px) and (max-width: 850px) {
-    .video-text {
-        left: 8%;
-    }
-
-    .map-text {
-        font-size: 1.5rem;
-    }
-
-    .text-content {
-        left: 4% !important;
-        top: -50% !important;
-    }
-
-    .mb-lg-3 {
-        margin-bottom: 12rem !important;
-    }
-
-    .text-content {
-        left: 2%;
-        top: -35%;
-    }
-
-    .clients-cards {
-        top: 1% !important;
-    }
-
-    .front-heading {
-        font-size: 1.7rem;
-    }
-
-}
-@media screen and (width: 768px) {
-    .front-heading {
-        font-size: 23px;
-    }
-
-    .map-text {
-        font-size: 23px;
-    }
-
-    .video-text {
-        left: 12%;
-    }
-
-    .text-content {
-        left: 0;
-    }
-
-    .simplifying-heading {
-        font-size: 60px;
-    }
-
-    #testimonials {
-        padding: 8rem 2rem;
-    }
 }
 .button {
     width: 135px;
