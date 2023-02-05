@@ -77,7 +77,7 @@ window.addEventListener('scroll', function (event) {
         neonNet.style.opacity = 1;
         neonNet.style.marginTop = 0;
         isTextInvisible = true;
-        window.scrollTo(0, 0)
+        // window.scrollTo(0, 0)
     }
 });
 
