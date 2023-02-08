@@ -70,8 +70,8 @@ window.addEventListener('scroll', function (event) {
             video.style.width = '100%';
             neonNet.style.width = '100%';
         } else {
-            video.style.width = '60%';
-            neonNet.style.width = '55%';
+            video.style.width = '50%';
+            neonNet.style.width = '45%';
         }
         video.style.opacity = 1;
         neonNet.style.opacity = 1;
